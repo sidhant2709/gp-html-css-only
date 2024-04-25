@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+
+:root {
+  /* fonts */
+  --header-text: Montserrat;
+
+  /* font sizes */
+  --header-text-size: 1.5rem;
+  --font-size-lgi: 1.188rem;
+  --font-size-lg: 1.125rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-lavender: #ddecfd;
+  --color-deepskyblue: rgba(0, 166, 247, 0.2);
+
+  /* Paddings */
+  --padding-21xl: 2.5rem;
+  --padding-xl: 1.25rem;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-5xs: 8px;
+  --br-31xl: 50px;
+}
