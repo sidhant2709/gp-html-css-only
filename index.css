@@ -266,7 +266,7 @@ nav>ul>li>span {
   height: 100%;
 }
 
-.input {
+.input-field {
   border-radius: var(--br-5xs);
   background-color: var(--color-white);
   height: 4.188rem;
