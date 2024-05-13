@@ -12,8 +12,6 @@
   color: var(--color-white);
   font-family: var(--header-text);
   display: flex;
-  justify-content: space-between;
-  gap: 10%;
 }
 
 .left-content {
@@ -21,16 +19,59 @@
   backdrop-filter: blur(52px);
   border-radius: 0 var(--br-31xl) var(--br-31xl) 0;
   background-color: var(--color-deepskyblue);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   padding: 2.187rem var(--padding-xl) 9.062rem;
-  gap: 40.125rem;
   z-index: 1;
   font-size: 2rem;
   height: 100%;
-  flex: 30%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.globalplacements-logo-wrapper {
+  width: 100%;
+}
+
+.globalplacements-logo {
+  max-width: 304px;
+  height: auto;
+}
+
+.login-image-wrapper {
+  width: 100%;
+}
+
+.login-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.login-page-hero-text {
+  width: 100%;
+}
+
+.recruiting-faculty-and-container {
+  font-size: inherit;
+  font-style: italic;
+  font-weight: 600;
+  font-family: inherit;
+  height: auto;
+}
+
+.faculty-and-nurses,
+.recruiting,
+.since-1994 {
+  margin: 0;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  width: 70%;
 }
 
 nav>ul {
@@ -56,17 +97,6 @@ nav>ul>li>span {
   align-items: center;
   justify-content: center;
 }
-
-.right-content {
-  flex: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-}
-
-
 
 .about-us,
 .vacancies {
@@ -142,82 +172,6 @@ nav>ul>li>span {
   z-index: 1;
 }
 
-.frame-child,
-.image-12-icon {
-  max-width: 100%;
-}
-
-.frame-child {
-  width: 36.188rem;
-  height: 64rem;
-  box-shadow: 0 0 45px #fff inset;
-  backdrop-filter: blur(52px);
-  border-radius: 0 var(--br-31xl) var(--br-31xl) 0;
-  background-color: var(--color-deepskyblue);
-  display: none;
-}
-
-.image-12-icon {
-  height: 5.313rem;
-  flex: 1;
-  overflow: hidden;
-  object-fit: cover;
-  z-index: 2;
-}
-
-.image-12-wrapper {
-  width: 20.688rem;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 0 0.812rem 0 0.875rem;
-  max-width: 100%;
-}
-
-.icon1 {
-  height: 34.813rem;
-  width: 34.813rem;
-  position: absolute;
-  margin: 0 !important;
-  top: -33rem;
-  left: calc(50% - 278.5px);
-  object-fit: cover;
-  z-index: 2;
-}
-
-.faculty-and-nurses,
-.recruiting,
-.since-1994 {
-  margin: 0;
-}
-
-.recruiting-faculty-and-container {
-  margin: 0;
-  width: 20.688rem;
-  position: relative;
-  font-size: inherit;
-  display: inline-block;
-  font-style: italic;
-  font-weight: 600;
-  font-family: inherit;
-  z-index: 3;
-}
-
-.group {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  max-width: 100%;
-}
-
-.left-content {
-  width: 36.188rem;
-  max-width: 100%;
-}
-
 @media screen and (max-width: 750px) {
   .recruiting-faculty-and-container {
     font-size: 1.625rem;
@@ -233,14 +187,17 @@ nav>ul>li>span {
 }
 
 .login-wrapper-parent {
+  position: relative;
   box-shadow: -4px -4px 17px rgba(234, 234, 234, 0.08),
     4px 4px 17px rgba(0, 0, 0, 0.16);
   border-radius: var(--br-11xl);
+  border-top: 1px solid var(--color-lavender);
+  border-left: 1px solid var(--color-lavender);
+  border-right: 1px solid var(--color-lavender);
   background: linear-gradient(115.13deg,
       rgba(1, 180, 184, 0.3) 5.04%,
       rgba(1, 93, 119, 0.3) 51.8%,
       rgba(0, 17, 61, 0.3) 92.88%);
-  border: 1px solid var(--color-lavender);
   width: 36.188rem;
   height: 24.688rem;
   display: flex;
