@@ -24,26 +24,54 @@ input {
   border: none;
 }
 
+div {
+  font-family: Montserrat;
+}
+
 :root {
   /* fonts */
   --header-text: Montserrat;
 
   /* font sizes */
-  --header-text-size: 1.5rem;
+  --header-text-size1: 1.5rem;
   --font-size-lgi: 1.188rem;
   --font-size-lg: 1.125rem;
+  --body-text-size: 14px;
+  --sub-header-size: 16px;
+  --header-text-size: 20px;
 
   /* Colors */
   --color-white: #fff;
   --color-lavender: #ddecfd;
   --color-deepskyblue: rgba(0, 166, 247, 0.2);
+  --color-darkslategray-100: #00606b;
+  --color-darkslategray-200: #005f6b;
 
   /* Paddings */
   --padding-21xl: 2.5rem;
   --padding-xl: 1.25rem;
+  --padding-base: 16px;
+  --padding-9xl: 28px;
+  --padding-6xs: 7px;
+  --padding-11xs: 2px;
+  --padding-5xs: 8px;
+  --padding-8xs: 5px;
+  --padding-smi: 13px;
+  --padding-xs: 12px;
+  --padding-2xl: 21px;
+  --padding-14xl: 33px;
+  --padding-lg: 18px;
 
   /* Border radiuses */
   --br-11xl: 30px;
   --br-5xs: 8px;
   --br-31xl: 50px;
+  --br-xl: 20px;
+
+  /* Gaps */
+  --gap-lgi: 19px;
+  --gap-base: 16px;
+  --gap-2xs: 11px;
+  --gap-xl: 20px;
+  --gap-xs: 12px;
 }

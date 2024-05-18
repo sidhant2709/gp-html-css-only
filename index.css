@@ -166,7 +166,7 @@ nav>ul>li>span {
 }
 
 .global-placements-is {
-  font-size: var(--header-text-size);
+  font-size: var(--header-text-size1);
   font-weight: 600;
   width: 40.063rem;
   z-index: 1;
@@ -254,4 +254,62 @@ nav>ul>li>span {
 
 .frame-button:hover {
   background-color: #00153c;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.about-us-parent {
+  position: relative;
+}
+
+.about-us-dropdown {
+  width: 240px;
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0.125rem;
+  border-radius: 10px;
+  background: linear-gradient(115.13deg,
+      rgba(1, 180, 184, 0.8) 5.04%,
+      rgba(1, 93, 119, 0.8) 10.8%,
+      rgba(0, 17, 61, 0.8) 92.88%);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--sub-header-size);
+  color: var(--color-white);
+  font-family: var(--body-text);
+  z-index: 2000;
+}
+
+.about-us-parent:hover .about-us-dropdown {
+  display: flex;
+}
+
+.our-story {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 78px;
+}
+
+.our-journey {
+  display: inline-block;
+  min-width: 101px;
+}
+
+.leadership-team,
+.our-journey,
+.what-makes-us,
+.why-work-with {
+  position: relative;
+  text-decoration: underline;
+  font-weight: 500;
 }
