@@ -126,7 +126,196 @@
                   <div class="frame-parent2">
                     <div class="tablersearch-parent">
                       <img class="tablersearch-icon" loading="lazy" alt="" src="./public/tablersearch.svg" />
-                      <img class="magefilter-icon" loading="lazy" alt="" src="./public/magefilter.svg" />
+                      <img class="magefilter-icon" loading="lazy" alt="" src="./public/magefilter.svg"
+                        id="filter-btn" />
+                      <div class="ld-adv-filter" id="myModal">
+                        <a class="advanced-filters">Advanced Filters</a>
+                        <section class="advanced-filters-section">
+                          <div class="lead-status">
+
+                            <!-- ==========Row 1=========== -->
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Submitted Documents</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Missing Documents</div>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Search</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 2=========== -->
+
+                            <div class="advanced-filters-rows">
+                              <div class="country-input">
+                                <a class="country">Country</a>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Origin</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Interested</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Current</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 3=========== -->
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">In CRM</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Not In CRM</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Waiting for Approval</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">All</div>
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 4=========== -->
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">In Pool</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Waiting for Removal</div>
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 5=========== -->
+
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Show Reassigned Leads</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Exclude Rejected Leads</div>
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 6=========== -->
+
+                            <div class="advanced-filters-rows">
+                              <div class="country-input">
+                                <a class="country">Candidate’s Interest</a>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Submitted</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 7=========== -->
+                            <div class="advanced-filters-rows">
+                              <div class="country-input">
+                                <div class="country">Candidate Reapplied</div>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <div class="advanced-filters-search-label">From</div>
+                                <input type="date" class="date-style">
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <div class="advanced-filters-search-label">To</div>
+                                <input type="date" class="date-style">
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 8=========== -->
+
+
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Include</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Exclude</div>
+                              </div>
+                              <div class="country-input">
+                                <a class="country">Duplicates from</a>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Select</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                            </div>
+
+
+                            <!-- ==========Row 9=========== -->
+
+                            <div class="advanced-filters-rows">
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Include</div>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-checkbox-input" type="checkbox" />
+                                <div class="advanced-filters-checkbox-label">Exclude</div>
+                              </div>
+                              <div class="country-input">
+                                <a class="country">Tagged from</a>
+                              </div>
+                              <div class="advanced-filters-select-box">
+                                <a class="advanced-filters-search-label">Select</a>
+                                <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
+                              </div>
+                            </div>
+
+                            <!-- ==========Row 10=========== -->
+
+                            <div class="advanced-filters-rows">
+                              <div class="country-input">
+                                <a class="country">Star Count</a>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-range-input" type="range" id="myRange" name="volume"
+                                  min="0" max="100">
+                              </div>
+
+                            </div>
+
+                            <!-- ==========Row 11=========== -->
+
+                            <div class="advanced-filters-rows" id="last-child">
+                              <div class="country-input">
+                                <a class="country">No. of times imported</a>
+                              </div>
+                              <div class="advanced-filters-checkbox-box">
+                                <input class="advanced-filter-range-input" type="range" id="myRange" name="volume"
+                                  min="0" max="100">
+                              </div>
+                            </div>
+
+                          </div>
+                        </section>
+                        <div class="apply-button">
+                          <button class="apply-container">
+                            <div class="apply">Apply</div>
+                          </button>
+                        </div>
+                      </div>
                       <img class="mdiplus-circle-outline-icon" loading="lazy" alt=""
                         src="./public/mdipluscircleoutline.svg" />
                       <img class="material-symbolsnotifications-icon" loading="lazy" alt=""
@@ -475,6 +664,23 @@
       </section>
     </main>
   </div>
+  <script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("filter-btn");
+    btn.onclick = function () {
+      modal.style.display = "flex";
+    }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      console.log(event)
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
