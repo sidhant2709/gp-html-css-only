@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@500&display=swap" />
+    <style>
+        *,
+        ::before,
+        ::after {
+            border-width: 0;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+            theme: {
+                extend: {
+                    colors: {
+                        "crm-white": "#fff",
+                        strokes: "#c7c7c7",
+                        "cry-text-black": "#000",
+                        "gp-green": "#005f6b",
+                        red: "#ff0000",
+                        silver: "rgba(199, 199, 199, 0.1)",
+                        gainsboro: "#d9d9d9",
+                        lime: "#12ff38",
+                        darkslategray: "#00606b",
+                    },
+                    spacing: {},
+                    fontFamily: {
+                        "body-text": "Montserrat",
+                        "segoe-ui": "'Segoe UI'",
+                    },
+                },
+                fontSize: {
+                    sm: "0.875rem",
+                    base: "1rem",
+                    xs: "0.75rem",
+                    xl: "1.25rem",
+                    "5xl": "1.5rem",
+                    inherit: "inherit",
+                },
+                screens: {
+                    lg: {
+                        max: "1200px",
+                    },
+                    mq1050: {
+                        raw: "screen and (max-width: 1050px)",
+                    },
+                    mq750: {
+                        raw: "screen and (max-width: 750px)",
+                    },
+                    mq450: {
+                        raw: "screen and (max-width: 450px)",
+                    },
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div
+        class="w-full relative bg-crm-white overflow-hidden flex flex-col items-end justify-start pt-[0rem] pb-[7.375rem] pr-[0rem] pl-[0rem] box-border gap-[1.243rem] leading-[normal] tracking-[normal]">
+        <section
+            class="self-stretch flex flex-row items-start justify-start gap-[1.25rem] max-w-full text-left text-[1.5rem] text-gp-green font-body-text mq1050:pl-[1.25rem] mq1050:pr-[1.25rem] mq1050:box-border">
+            <div
+                class="[background:linear-gradient(90deg,_#005f6b,_#005f6b_76.5%)] overflow-hidden flex flex-col items-start justify-start pt-[1.375rem] pb-[3.187rem] pr-[0.625rem] pl-[1rem] gap-[1.25rem] border-[0.3px] border-solid border-crm-white mq750:pb-[1.313rem] mq750:box-border mq1050:hidden mq1050:pt-[1.25rem] mq1050:pb-[2.063rem] mq1050:box-border">
+                <div class="flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.062rem]">
+                    <img class="h-[3.563rem] w-[3.438rem] relative object-cover" loading="lazy" alt=""
+                        src="/public/image-12@2x.png" />
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/materialsymbolslighthomeoutline.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.875rem] pl-[0.312rem]">
+                    <div class="flex flex-col items-end justify-start gap-[1.187rem]">
+                        <div class="flex flex-row items-start justify-end py-[0rem] pr-[0.25rem] pl-[0.5rem]">
+                            <div class="h-[2.063rem] w-[1.5rem] relative">
+                                <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                    loading="lazy" alt="" src="/public/grommeticonsprojects.svg" />
+
+                                <div
+                                    class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="h-[2.75rem] flex flex-col items-start justify-center p-[0.5rem] box-border relative gap-[0.5rem]">
+                            <div
+                                class="w-[2.5rem] h-[2.5rem] absolute !m-[0] top-[0.125rem] left-[-0.125rem] rounded-[50%] bg-crm-white">
+                            </div>
+                            <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0 z-[1]" alt=""
+                                src="/public/bxsdata.svg" />
+
+                            <div
+                                class="w-[1.25rem] h-[0.063rem] relative box-border z-[1] border-t-[1px] border-solid border-gp-green">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/fluentmdl2website.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="flex flex-col items-start justify-start gap-[1.687rem]">
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/materialsymbolsdeleteoutline.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                            </div>
+                        </div>
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/antdesigndatabaseoutlined.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                            </div>
+                        </div>
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/iconoirsettingsprofiles.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/mditick.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[14.375rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" alt=""
+                            src="/public/tablernotification.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-crm-white">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-start pt-[0rem] px-[0.75rem] pb-[1.25rem]">
+                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" alt=""
+                        src="/public/materialsymbolssettingsoutline.svg" />
+                </div>
+                <div class="flex flex-row items-start justify-start py-[0rem] px-[0.75rem]">
+                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" alt=""
+                        src="/public/fasolidpoweroff.svg" />
+                </div>
+            </div>
+            <div
+                class="flex-1 flex flex-col items-start justify-start pt-[1.75rem] px-[0rem] pb-[0rem] box-border max-w-[calc(100%_-_101px)] mq1050:max-w-full">
+                <div class="self-stretch flex flex-col items-end justify-start gap-[0.687rem] max-w-full">
+                    <div
+                        class="self-stretch flex flex-row items-start justify-between py-[0rem] pr-[0rem] pl-[1rem] box-border max-w-full gap-[1.25rem] mq750:flex-wrap">
+                        <div
+                            class="flex flex-col items-start justify-start pt-[0.5rem] px-[0rem] pb-[0rem] box-border max-w-full">
+                            <h2 class="m-0 relative text-inherit font-bold font-inherit mq450:text-[1.188rem]">
+                                Edit the Candidate Profile
+                            </h2>
+                        </div>
+                        <div
+                            class="flex flex-row items-start justify-start gap-[2.625rem] text-[1rem] font-segoe-ui mq450:gap-[1.313rem]">
+                            <div class="flex flex-col items-start justify-start pt-[0.812rem] px-[0rem] pb-[0rem]">
+                                <div class="flex flex-row items-start justify-start gap-[1.25rem]">
+                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                        alt="" src="/public/tablersearch.svg" />
+
+                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                        alt="" src="/public/mdipluscircleoutline.svg" />
+
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.5rem] pl-[0rem]">
+                                        <img class="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0" alt=""
+                                            src="/public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
+                                    </div>
+                                    <a
+                                        class="[text-decoration:none] relative font-medium text-[inherit] inline-block min-w-[3.438rem]">Admin</a>
+                                </div>
+                            </div>
+                            <img class="h-[3.125rem] w-[3.125rem] relative rounded-[50%] object-cover" loading="lazy"
+                                alt="" src="/public/ellipse-18@2x.png" />
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch h-[0.563rem] flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[0.5rem] box-border max-w-full">
+                        <div
+                            class="self-stretch flex-1 relative box-border max-w-full border-t-[1px] border-dashed border-darkslategray">
+                        </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-row items-start justify-end py-[0rem] px-[3rem] box-border max-w-full text-[1.25rem] lg:pl-[1.5rem] lg:pr-[1.5rem] lg:box-border">
+                        <div class="flex-1 flex flex-col items-end justify-start gap-[1.25rem] max-w-full">
+                            <div
+                                class="self-stretch rounded-xl bg-crm-white box-border overflow-hidden flex flex-row flex-wrap items-start justify-start pt-[1.437rem] px-[1rem] pb-[0.5rem] gap-[1.5rem] max-w-full border-[1px] border-solid border-strokes">
+                                <div class="w-[11.25rem] flex flex-row items-start justify-start">
+                                    <div class="h-[11.25rem] flex-1 relative">
+                                        <div
+                                            class="absolute top-[0rem] left-[0rem] rounded-[50%] box-border w-full h-full border-[0px] border-solid border-lime">
+                                        </div>
+                                        <div
+                                            class="absolute w-[calc(100%_-_20px)] top-[0.625rem] right-[0.625rem] left-[0.625rem] rounded-[50%] bg-gainsboro box-border h-[10rem] z-[1] border-[0px] border-solid border-cry-text-black">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-col items-start justify-start gap-[1rem] min-w-[37.875rem] max-w-full mq1050:min-w-full">
+                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                        <h3
+                                            class="m-0 relative text-inherit font-semibold font-inherit mq450:text-[1rem]">
+                                            Name of the Candidate
+                                        </h3>
+                                        <input class="m-0 h-[1.375rem] w-[1.25rem]" type="checkbox" />
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-col items-start justify-start gap-[0.75rem] max-w-full text-[0.875rem] text-cry-text-black">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] text-[1rem] text-gp-green mq750:flex-wrap">
+                                            <div class="relative font-medium">
+                                                Name of the Candidate
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0rem]">
+                                                <div class="relative font-medium whitespace-nowrap">
+                                                    Created by Admin 1 at 00:00hrs
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-col items-start justify-start gap-[0.437rem] max-w-full">
+                                            <div
+                                                class="self-stretch h-[0.063rem] relative box-border border-t-[1px] border-solid border-strokes">
+                                            </div>
+                                            <div
+                                                class="w-[39rem] flex flex-row items-start justify-start py-[0rem] px-[0.062rem] box-border max-w-full">
+                                                <div
+                                                    class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq450:flex-wrap">
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/materialsymbolscalloutline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                                                            <div
+                                                                class="relative whitespace-pre-wrap inline-block min-w-[7.375rem] shrink-0">
+                                                                +91 99999 99999
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/mingcutedepartmentline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                            <a
+                                                                class="[text-decoration:none] relative text-[inherit] inline-block min-w-[5.5rem]">Department</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.062rem] box-border max-w-full">
+                                            <div
+                                                class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq1050:flex-wrap">
+                                                <div class="flex flex-col items-start justify-start gap-[0.75rem]">
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/materialsymbolsmailoutline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                                                            <div class="relative whitespace-nowrap">
+                                                                Namenamename@gmail.com
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/mingcutelocationline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                            <div class="relative">
+                                                                Hyderabad, Telangana, India
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="w-[27.125rem] flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem] box-border max-w-full">
+                                                    <div
+                                                        class="self-stretch flex flex-col items-start justify-start gap-[0.75rem] max-w-full">
+                                                        <div
+                                                            class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                            <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                                alt="" src="/public/iconparkoutlinedegreehat.svg" />
+
+                                                            <div
+                                                                class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                                <a
+                                                                    class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.25rem]">Degree</a>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.062rem] box-border max-w-full">
+                                                            <div
+                                                                class="flex-1 flex flex-row items-end justify-start gap-[2.062rem] max-w-full mq450:gap-[1rem] mq750:flex-wrap">
+                                                                <div
+                                                                    class="flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0.875rem]">
+                                                                    <div
+                                                                        class="flex flex-row items-start justify-start gap-[0.687rem]">
+                                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                                            alt="" src="/public/phsuitcasebold.svg" />
+
+                                                                        <div
+                                                                            class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                                            <div
+                                                                                class="relative inline-block min-w-[7.688rem]">
+                                                                                00 Yrs 00 Months
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="flex-1 flex flex-row items-start justify-start gap-[0.5rem] min-w-[9.813rem] text-gp-green">
+                                                                    <div class="relative">
+                                                                        Profile last updated by Admin 1
+                                                                    </div>
+                                                                    <img class="h-[1rem] w-[1rem] relative overflow-hidden shrink-0 object-contain"
+                                                                        alt="" src="/public/solarmenudotsbold@2x.png" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start gap-[1.5rem] max-w-full text-[1rem] mq1050:flex-wrap">
+                                <div
+                                    class="w-[20.75rem] flex flex-col items-end justify-start gap-[1.25rem] min-w-[20.75rem] max-w-full mq1050:flex-1">
+                                    <div
+                                        class="self-stretch rounded-lg overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[0rem] pb-[0.375rem] gap-[1.5rem] border-[1px] border-solid border-strokes">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-center py-[0rem] px-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[5.938rem]">
+                                                Quick Links
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-col items-start justify-start gap-[0.5rem] text-[0.875rem]">
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start py-[0.5rem] px-[0.75rem] border-t-[1px] border-solid border-silver border-b-[1px]">
+                                                <div class="relative">Profile Description</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Personal Information</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[7.813rem]">
+                                                    Additional Details
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.625rem]">
+                                                    Qualification
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.375rem]">
+                                                    Registration
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[4.875rem]">
+                                                    Experience
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Skills & Recognition</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.188rem]">
+                                                    Documents
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.813rem]">
+                                                    Employment
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Interview Summary</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded-lg bg-crm-white flex flex-col items-start justify-start py-[0.375rem] px-[0.125rem] gap-[0.75rem] border-[1px] border-solid border-strokes">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-center py-[0rem] px-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[7.063rem]">
+                                                Quick Actions
+                                            </div>
+                                        </div>
+                                        <div class="self-stretch h-[5.25rem] relative">
+                                            <img class="absolute top-[0.5rem] left-[0.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/gridiconsaddoutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[3.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/materialsymbolsnotes.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[6.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/mdivideooutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[9.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/mdideleteclockoutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[12.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/claritynotificationline.svg" />
+
+                                            <img class="absolute top-[0rem] left-[15rem] w-[2.25rem] h-[2.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/phflag.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[18.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/materialsymbolslabeloutline.svg" />
+
+                                            <img class="absolute top-[3.5rem] left-[0.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                alt="" src="/public/mdiclockoutline.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-col items-start justify-start gap-[1.25rem] min-w-[33.5rem] max-w-full mq750:min-w-full">
+                                    <div
+                                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-end justify-start pt-[0.875rem] pb-[1.125rem] pr-[3.187rem] pl-[0.562rem] gap-[1.75rem] max-w-full border-[1px] border-solid border-strokes mq1050:pr-[1.563rem] mq1050:box-border">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-end py-[0rem] pr-[0.687rem] pl-[0rem] box-border max-w-full">
+                                            <div
+                                                class="flex-1 flex flex-col items-start justify-start gap-[0.25rem] max-w-full">
+                                                <div class="relative font-medium">
+                                                    Profile Description
+                                                </div>
+                                                <div class="self-stretch flex flex-col items-start justify-center">
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start pt-[0.125rem] px-[0.5rem] pb-[3.25rem] border-[1px] border-solid border-cry-text-black">
+                                                        <input
+                                                            class="w-[7rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                                            placeholder="Short Summary" type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem] text-crm-white">
+                                            <div class="relative font-medium inline-block min-w-[2.375rem]">
+                                                Save
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.125rem] gap-[1.093rem] max-w-full text-[0.875rem] text-cry-text-black border-[1px] border-solid border-strokes">
+                                        <div class="relative text-[1rem] font-medium text-gp-green">
+                                            Personal Details
+                                        </div>
+                                        <div
+                                            class="w-[41.5rem] flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq750:flex-wrap">
+                                            <div
+                                                class="w-[13.563rem] flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem] box-border">
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[3.313rem]">
+                                                        Gender
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.688rem]">
+                                                            Select
+                                                        </div>
+                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                            alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[7.938rem] flex flex-col items-start justify-start py-[0rem] pr-[0.625rem] pl-[0rem] box-border">
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-center gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[3.063rem]">
+                                                        Height
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-row items-center justify-start gap-[0.375rem] text-strokes">
+                                                        <div
+                                                            class="w-[3rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[2rem]">
+                                                                Feet
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <input
+                                                                class="w-[2.938rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                                                placeholder="Inches" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[5.875rem] flex flex-col items-start justify-start py-[0rem] pr-[0.625rem] pl-[0rem] box-border">
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-center gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[3.25rem]">
+                                                        Weight
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-row items-center justify-start gap-[0.375rem] text-strokes">
+                                                        <div
+                                                            class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[1.25rem]">
+                                                                Kg
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <input
+                                                                class="w-[1.625rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                                                placeholder="Gm" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[4.75rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                                                <div class="relative inline-block min-w-[1.813rem]">
+                                                    BMI
+                                                </div>
+                                                <div
+                                                    class="self-stretch h-[1.563rem] rounded bg-crm-white box-border overflow-hidden shrink-0 border-[1px] border-solid border-cry-text-black">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="w-[47.688rem] flex flex-row items-start justify-start gap-[3.125rem] max-w-full mq450:gap-[1.563rem] mq750:flex-wrap">
+                                            <div
+                                                class="w-[13.563rem] flex flex-col items-start justify-start gap-[1.25rem] min-w-[13.563rem] mq750:flex-1">
+                                                <div
+                                                    class="w-[9.938rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[5.813rem]">
+                                                        Date Of Birth
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-row items-center justify-start gap-[0.75rem] text-strokes">
+                                                        <div
+                                                            class="w-[2.5rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[1.5rem]">
+                                                                DD
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="w-[2.688rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[1.688rem]">
+                                                                MM
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[2.25rem]">
+                                                                YYYY
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[5.938rem]">
+                                                        Place of Birth
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.688rem]">
+                                                            Select
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[6.063rem]">
+                                                        Marital Status
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.688rem]">
+                                                            Select
+                                                        </div>
+                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                            alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                    <div class="relative inline-block min-w-[6.938rem]">
+                                                        Children (if any)
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.688rem]">
+                                                            Select
+                                                        </div>
+                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                            alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex-1 flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem] box-border min-w-[20.125rem] max-w-full">
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.937rem]">
+                                                    <div
+                                                        class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                        <input
+                                                            class="w-[8.5rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-cry-text-black text-left inline-block p-0"
+                                                            placeholder="Temporary Address" type="text" />
+
+                                                        <div
+                                                            class="self-stretch h-[1.625rem] rounded bg-crm-white box-border overflow-hidden shrink-0 border-[1px] border-solid border-cry-text-black">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.312rem] gap-[0.375rem]">
+                                                        <div
+                                                            class="self-stretch flex flex-row items-start justify-start gap-[0.062rem] mq750:flex-wrap">
+                                                            <div
+                                                                class="flex-[0.9345] flex flex-col items-start justify-start py-[0rem] pr-[0.687rem] pl-[0rem] box-border gap-[1.25rem] min-w-[6.875rem] mq450:flex-1">
+                                                                <div
+                                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                                    <div class="relative inline-block min-w-[1.688rem]">
+                                                                        City
+                                                                    </div>
+                                                                    <div
+                                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                        <div
+                                                                            class="relative inline-block min-w-[2.688rem]">
+                                                                            Select
+                                                                        </div>
+                                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                            alt=""
+                                                                            src="/public/iconamoonarrowup2bold.svg" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="relative">Permanent Address</div>
+                                                            </div>
+                                                            <div
+                                                                class="w-[9.813rem] flex flex-col items-end justify-start gap-[1.468rem]">
+                                                                <div
+                                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                                    <div class="relative inline-block min-w-[2.313rem]">
+                                                                        State
+                                                                    </div>
+                                                                    <div
+                                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                        <div
+                                                                            class="relative inline-block min-w-[2.688rem]">
+                                                                            Select
+                                                                        </div>
+                                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                            alt=""
+                                                                            src="/public/iconamoonarrowup2bold.svg" />
+                                                                    </div>
+                                                                </div>
+                                                                <input class="m-0 w-[1.375rem] h-[0.75rem]"
+                                                                    type="checkbox" />
+                                                            </div>
+                                                            <div
+                                                                class="flex-1 flex flex-col items-start justify-start gap-[1.375rem] min-w-[6.875rem]">
+                                                                <div
+                                                                    class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.062rem] pl-[0.687rem]">
+                                                                    <div
+                                                                        class="flex-1 flex flex-col items-start justify-start gap-[0.375rem]">
+                                                                        <div
+                                                                            class="relative inline-block min-w-[3.563rem]">
+                                                                            Country
+                                                                        </div>
+                                                                        <div
+                                                                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                            <div
+                                                                                class="relative inline-block min-w-[2.688rem]">
+                                                                                Select
+                                                                            </div>
+                                                                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                                alt=""
+                                                                                src="/public/iconamoonarrowup2bold.svg" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="relative text-[0.75rem] font-light">
+                                                                    Same as Temporary Address
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <input
+                                                            class="[outline:none] bg-crm-white self-stretch h-[1.625rem] rounded box-border overflow-hidden shrink-0 min-w-[15.625rem] border-[1px] border-solid border-cry-text-black"
+                                                            type="text" />
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-row items-start justify-start gap-[0.706rem] mq750:flex-wrap">
+                                                        <div
+                                                            class="flex-1 flex flex-col items-start justify-start gap-[0.375rem] min-w-[7.375rem]">
+                                                            <div class="relative inline-block min-w-[1.688rem]">
+                                                                City
+                                                            </div>
+                                                            <div
+                                                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                <div class="relative inline-block min-w-[2.688rem]">
+                                                                    Select
+                                                                </div>
+                                                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="flex-1 flex flex-col items-start justify-start gap-[0.375rem] min-w-[7.375rem]">
+                                                            <div class="relative inline-block min-w-[2.313rem]">
+                                                                State
+                                                            </div>
+                                                            <div
+                                                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                <div class="relative inline-block min-w-[2.688rem]">
+                                                                    Select
+                                                                </div>
+                                                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="flex-1 flex flex-col items-end justify-start gap-[1.75rem] min-w-[7.375rem]">
+                                                            <div
+                                                                class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                                                <div class="relative inline-block min-w-[3.563rem]">
+                                                                    Country
+                                                                </div>
+                                                                <div
+                                                                    class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                                    <div class="relative inline-block min-w-[2.688rem]">
+                                                                        Select
+                                                                    </div>
+                                                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                                        alt=""
+                                                                        src="/public/iconamoonarrowup2bold.svg" />
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem] text-[1rem] text-crm-white">
+                                                                <div
+                                                                    class="relative font-medium inline-block min-w-[2.375rem]">
+                                                                    Save
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-cry-text-black font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.375rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="relative font-medium text-gp-green">
+                    Additional Details
+                </div>
+                <div class="w-[0rem] h-[0.938rem] hidden"></div>
+                <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                    Expert
+                </div>
+                <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                    Expert
+                </div>
+                <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                    Expert
+                </div>
+                <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                    Expert
+                </div>
+                <div
+                    class="w-[47.625rem] flex flex-row items-start justify-start gap-[1.25rem] max-w-full text-[0.875rem] mq750:flex-wrap">
+                    <div
+                        class="w-[13.563rem] flex flex-col items-start justify-start gap-[1.262rem] min-w-[13.563rem] mq750:flex-1">
+                        <div class="flex flex-col items-start justify-start gap-[0.375rem]">
+                            <a
+                                class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.875rem]">Passport</a>
+                            <div
+                                class="rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] pr-[0.562rem] pl-[0.625rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative">XXXXXXXXXXXXXXXXXXXXXX</div>
+                            </div>
+                        </div>
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.625rem]">
+                                Religion
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative">International Experience</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative">English Language Test</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div class="w-[9.938rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[6.125rem]">
+                                Date Of Exam
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-center justify-start gap-[0.75rem] text-strokes">
+                                <div
+                                    class="w-[2.5rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[1.5rem]">DD</div>
+                                </div>
+                                <div
+                                    class="w-[2.688rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[1.688rem]">MM</div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative">Pro-Metric Country</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div class="w-[9.938rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[6.125rem]">
+                                Date Of Exam
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-center justify-start gap-[0.75rem] text-strokes">
+                                <div
+                                    class="w-[2.5rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[1.5rem]">DD</div>
+                                </div>
+                                <div
+                                    class="w-[2.688rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[1.688rem]">MM</div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex-1 flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem] box-border min-w-[21.313rem] max-w-full mq750:min-w-full">
+                        <div class="self-stretch flex flex-col items-end justify-start gap-[0.375rem]">
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start [row-gap:20px] mq750:flex-wrap">
+                                <div
+                                    class="w-[13.563rem] flex flex-col items-start justify-start gap-[1.25rem] min-w-[13.563rem] mq750:flex-1">
+                                    <div class="w-[9.938rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                                        <div class="relative inline-block min-w-[5.875rem]">
+                                            Date Of Issue
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-center justify-start gap-[0.75rem] text-strokes">
+                                            <div
+                                                class="w-[2.5rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[1.5rem]">
+                                                    DD
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[2.688rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[1.688rem]">
+                                                    MM
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[2.25rem]">
+                                                    YYYY
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                        <div class="relative inline-block min-w-[4.813rem] z-[1]">
+                                            Nationality
+                                        </div>
+                                        <div
+                                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                            <div class="relative inline-block min-w-[2.688rem]">
+                                                Select
+                                            </div>
+                                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="self-stretch flex flex-col items-start justify-start gap-[0.375rem]">
+                                        <div class="relative inline-block min-w-[4.625rem]">
+                                            In Country
+                                        </div>
+                                        <div
+                                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                            <div class="relative inline-block min-w-[2.688rem]">
+                                                Select
+                                            </div>
+                                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="w-[12.813rem] flex flex-col items-start justify-start gap-[0.375rem] text-[0.75rem]">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-start gap-[1.375rem]">
+                                            <div class="flex-1 flex flex-col items-start justify-start gap-[1.25rem]">
+                                                <div
+                                                    class="self-stretch flex flex-row items-start justify-start gap-[1.187rem]">
+                                                    <div
+                                                        class="flex-1 flex flex-col items-start justify-start gap-[0.5rem]">
+                                                        <div class="relative font-light inline-block min-w-[3.5rem]">
+                                                            Listening
+                                                        </div>
+                                                        <div
+                                                            class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.125rem] text-[0.875rem] text-strokes">
+                                                            <div
+                                                                class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                                <div class="relative inline-block min-w-[2.25rem]">
+                                                                    YYYY
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex-1 flex flex-col items-start justify-start gap-[0.5rem]">
+                                                        <div
+                                                            class="flex flex-row items-start justify-start py-[0rem] px-[0.187rem]">
+                                                            <div
+                                                                class="relative font-light inline-block min-w-[2.813rem]">
+                                                                Writing
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] text-[0.875rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                            <div class="relative inline-block min-w-[2.25rem]">
+                                                                YYYY
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex flex-row items-start justify-start py-[0rem] pr-[0.75rem] pl-[0.125rem] text-[0.875rem]">
+                                                    <div class="relative inline-block min-w-[7.063rem]">
+                                                        Eligibility Status
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[3.5rem] flex flex-col items-start justify-start gap-[0.5rem]">
+                                                <div class="relative font-light inline-block min-w-[3.5rem]">
+                                                    Speaking
+                                                </div>
+                                                <div
+                                                    class="self-stretch flex flex-row items-start justify-start py-[0rem] px-[0.125rem] text-[0.875rem] text-strokes">
+                                                    <div
+                                                        class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.25rem]">
+                                                            YYYY
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="w-[10.063rem] flex flex-row items-start justify-start py-[0rem] px-[0.125rem] box-border text-[0.875rem] text-strokes">
+                                            <div
+                                                class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[2.688rem]">
+                                                    Select
+                                                </div>
+                                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="relative">Pro-Metric Language Test</div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-col items-start justify-start gap-[9.812rem] min-w-[12.5rem] mq450:gap-[4.875rem]">
+                                    <div class="w-[9.938rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                                        <div class="relative inline-block min-w-[6.313rem]">
+                                            Date Of Expiry
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-center justify-start gap-[0.75rem] text-strokes">
+                                            <div
+                                                class="w-[2.5rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[1.5rem]">
+                                                    DD
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[2.688rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[1.688rem]">
+                                                    MM
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                                <div class="relative inline-block min-w-[2.25rem]">
+                                                    YYYY
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.5rem] text-[0.75rem]">
+                                        <div
+                                            class="flex-1 flex flex-col items-start justify-start gap-[5.562rem] mq450:gap-[2.75rem]">
+                                            <div
+                                                class="self-stretch flex flex-row items-end justify-start gap-[1rem] mq450:flex-wrap">
+                                                <div
+                                                    class="w-[3.688rem] flex flex-col items-start justify-start py-[0rem] pr-[0.437rem] pl-[0rem] box-border gap-[0.5rem]">
+                                                    <div class="relative font-light inline-block min-w-[3.188rem]">
+                                                        Reading
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] text-[0.875rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.25rem]">
+                                                            YYYY
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="w-[3.25rem] flex flex-col items-start justify-start gap-[0.5rem]">
+                                                    <div
+                                                        class="flex flex-row items-start justify-start py-[0rem] px-[0.312rem]">
+                                                        <div class="relative font-light inline-block min-w-[2.625rem]">
+                                                            Overall
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] text-[0.875rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.25rem]">
+                                                            YYYY
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex-1 flex flex-col items-start justify-start gap-[0.375rem] min-w-[6.375rem] text-[0.875rem]">
+                                                    <div class="relative inline-block min-w-[2.813rem]">
+                                                        Result
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                                        <div class="relative inline-block min-w-[2.688rem]">
+                                                            Select
+                                                        </div>
+                                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                                            alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[16.438rem] flex flex-row items-start justify-start py-[0rem] px-[2.062rem] box-border text-[0.875rem]">
+                                                <div
+                                                    class="flex-1 flex flex-row items-start justify-between gap-[1.25rem] mq450:flex-wrap">
+                                                    <div class="relative inline-block min-w-[2.813rem]">
+                                                        Result
+                                                    </div>
+                                                    <div class="relative inline-block min-w-[2.5rem]">
+                                                        Score
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[0.875rem] gap-[1.281rem] text-strokes mq750:flex-wrap">
+                                <div
+                                    class="flex-1 rounded bg-crm-white box-border overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] min-w-[3.813rem] gap-[1.25rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.688rem]">
+                                        Select
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                        alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                </div>
+                                <div
+                                    class="w-[8.563rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.688rem]">
+                                        Select
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                        alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                </div>
+                                <div
+                                    class="w-[6.875rem] rounded bg-crm-white box-border overflow-hidden shrink-0 flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.688rem]">
+                                        Select
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0.125rem] pb-[1.375rem]">
+                                <div class="w-[9.813rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                                    <div class="relative inline-block min-w-[7.063rem]">
+                                        Eligibility Status
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                        <div class="relative inline-block min-w-[2.688rem]">
+                                            Select
+                                        </div>
+                                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                            alt="" src="/public/iconamoonarrowup2bold.svg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem] text-[1rem] text-crm-white">
+                                <div class="relative font-medium inline-block min-w-[2.375rem]">
+                                    Save
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-end justify-start pt-[0.875rem] pb-[1.125rem] pr-[2.25rem] pl-[0.937rem] gap-[1.75rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="self-stretch flex flex-col items-start justify-start gap-[0.812rem]">
+                    <div class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] mq450:flex-wrap">
+                        <div class="relative font-medium inline-block min-w-[6.5rem]">
+                            Qualification
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem] text-[0.875rem]">
+                            <div
+                                class="rounded-lg flex flex-row items-start justify-start py-[0.25rem] pr-[0.5rem] pl-[0.75rem] gap-[0.25rem]">
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                    alt="" src="/public/materialsymbolsadd.svg" />
+
+                                <u class="relative [text-decoration:underline] inline-block min-w-[6.563rem]">Add
+                                    Education</u>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch h-[12.313rem] shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-crm-white flex flex-row flex-wrap items-center justify-start p-[0.625rem] box-border relative gap-[0.937rem_4.625rem] text-[0.875rem] text-cry-text-black">
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[0.625rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[4.5rem]">
+                                Education
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[0.625rem] left-[26.563rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.25rem]">Degree</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[4.625rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.313rem]">
+                                College
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[4.625rem] left-[26.563rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[4.375rem]">
+                                University
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[8.625rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[5.375rem]">
+                                Course Type
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[11.688rem] !m-[0] absolute top-[8.625rem] left-[26.563rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.875rem]">
+                                Duration
+                            </div>
+                            <div class="self-stretch flex flex-row items-end justify-start gap-[0.5rem] text-strokes">
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                                <div class="flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0.75rem]">
+                                    <div
+                                        class="w-[0.5rem] h-[0.063rem] relative box-border border-t-[1px] border-solid border-cry-text-black">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-end py-[0rem] px-[0.625rem] text-crm-white">
+                    <div
+                        class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem]">
+                        <div class="relative font-medium inline-block min-w-[2.375rem]">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-end justify-start pt-[0.875rem] pb-[1.125rem] pr-[2.25rem] pl-[0.937rem] gap-[1.75rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="self-stretch flex flex-col items-start justify-start gap-[0.812rem]">
+                    <div class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] mq450:flex-wrap">
+                        <div class="relative font-medium inline-block min-w-[6.75rem]">
+                            Registrations
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem] text-[0.875rem]">
+                            <div
+                                class="rounded-lg flex flex-row items-start justify-start py-[0.25rem] pr-[0rem] pl-[0.75rem] gap-[0.375rem]">
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                    alt="" src="/public/materialsymbolsadd.svg" />
+
+                                <u class="relative [text-decoration:underline] inline-block min-w-[7.813rem]">Add
+                                    Registrations</u>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch h-[8.625rem] shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-crm-white flex flex-row flex-wrap items-center justify-start p-[0.625rem] box-border relative gap-[1.25rem_4.625rem] text-[0.875rem] text-cry-text-black">
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[0.625rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[7.688rem]">
+                                Registration Type
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[0.656rem] left-[26.438rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative">Registration Number</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[4.969rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative">Registration Council</div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[11.688rem] !m-[0] absolute top-[4.938rem] left-[26.438rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.875rem]">
+                                Duration
+                            </div>
+                            <div class="self-stretch flex flex-row items-end justify-start gap-[0.5rem] text-strokes">
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        loading="lazy" alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                                <div class="flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0.75rem]">
+                                    <div
+                                        class="w-[0.5rem] h-[0.063rem] relative box-border border-t-[1px] border-solid border-cry-text-black">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        loading="lazy" alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-end py-[0rem] px-[0.625rem] text-crm-white">
+                    <div
+                        class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem]">
+                        <div class="relative font-medium inline-block min-w-[2.375rem]">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-end justify-start pt-[0.875rem] pb-[1.125rem] pr-[2.25rem] pl-[0.937rem] gap-[1.75rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="self-stretch flex flex-col items-start justify-start gap-[0.812rem] max-w-full">
+                    <div class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] mq450:flex-wrap">
+                        <div class="relative font-medium inline-block min-w-[5.688rem]">
+                            Experience
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem] text-[0.875rem]">
+                            <div
+                                class="rounded-lg flex flex-row items-start justify-start py-[0.25rem] pr-[0.125rem] pl-[0.75rem] gap-[0.25rem]">
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                    loading="lazy" alt="" src="/public/materialsymbolsadd.svg" />
+
+                                <u class="relative [text-decoration:underline] inline-block min-w-[6.938rem]">Add
+                                    Experience</u>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch h-[22.125rem] shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-crm-white flex flex-row flex-wrap items-center justify-start pt-[2.5rem] px-[0.625rem] pb-[0.625rem] box-border relative gap-[1.25rem_3.031rem] max-w-full text-[0.875rem] text-cry-text-black">
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[2.5rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[5.75rem]">
+                                Organisation
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[2.5rem] left-[26.438rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.563rem]">
+                                Address
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[6.75rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[5.375rem]">
+                                Designation
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[6.75rem] left-[26.438rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[5.5rem]">
+                                Department
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[21.063rem] !m-[0] absolute top-[11.063rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[5.375rem]">
+                                Course Type
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                                <div class="relative inline-block min-w-[2.688rem]">
+                                    Select
+                                </div>
+                                <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                    alt="" src="/public/iconamoonarrowup2bold.svg" />
+                            </div>
+                        </div>
+                        <div
+                            class="w-[11.688rem] !m-[0] absolute top-[11.063rem] left-[26.438rem] flex flex-col items-start justify-start gap-[0.375rem]">
+                            <div class="relative inline-block min-w-[3.875rem]">
+                                Duration
+                            </div>
+                            <div class="self-stretch flex flex-row items-end justify-start gap-[0.5rem] text-strokes">
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        loading="lazy" alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                                <div class="flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[0.75rem]">
+                                    <div
+                                        class="w-[0.5rem] h-[0.063rem] relative box-border border-t-[1px] border-solid border-cry-text-black">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.437rem] gap-[0.75rem] border-[1px] border-solid border-cry-text-black">
+                                    <div class="relative inline-block min-w-[2.25rem]">
+                                        YYYY
+                                    </div>
+                                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                        loading="lazy" alt="" src="/public/solarcalendarlinear.svg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[47rem] !m-[0] absolute top-[15.375rem] left-[0.625rem] flex flex-col items-start justify-start gap-[0.375rem] max-w-full">
+                            <div class="relative inline-block min-w-[6.938rem]">
+                                Work Summary
+                            </div>
+                            <div
+                                class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start pt-[0.125rem] px-[0.5rem] pb-[3.25rem] border-[1px] border-solid border-cry-text-black">
+                                <input
+                                    class="w-[11.5rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                    placeholder="Roles And Responsibilities" type="text" />
+                            </div>
+                        </div>
+                        <div
+                            class="!m-[0] absolute top-[12.875rem] left-[39.375rem] flex flex-row items-start justify-start gap-[0.375rem] text-[0.75rem]">
+                            <input class="m-0 h-[0.844rem] w-[0.75rem]" type="checkbox" />
+
+                            <div class="relative font-light inline-block min-w-[6.813rem]">
+                                Add to Experience
+                            </div>
+                        </div>
+                        <div
+                            class="!m-[0] absolute top-[0.25rem] left-[0.625rem] flex flex-row items-start justify-start gap-[0.625rem] text-[1rem]">
+                            <input class="m-0 h-[1.125rem] w-[1rem]" type="checkbox" />
+
+                            <div class="relative font-medium">Current Employment</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-end py-[0rem] px-[0.625rem] text-crm-white">
+                    <div
+                        class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem]">
+                        <div class="relative font-medium inline-block min-w-[2.375rem]">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.125rem] gap-[1.231rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="relative font-medium inline-block min-w-[2.625rem]">
+                    Skills
+                </div>
+                <div
+                    class="w-[48.375rem] flex flex-row items-start justify-start py-[0rem] px-[0.687rem] box-border max-w-full text-[0.875rem] text-cry-text-black">
+                    <div class="flex-1 flex flex-col items-start justify-start gap-[0.375rem] max-w-full">
+                        <div class="relative inline-block min-w-[2.25rem]">Skills</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] border-[1px] border-solid border-cry-text-black">
+                            <input
+                                class="w-[4.25rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                placeholder="Add Skills " type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="relative font-medium">Recognition/Awards</div>
+                <div
+                    class="w-[48.375rem] flex flex-row items-start justify-start py-[0rem] px-[0.687rem] box-border max-w-full text-[0.875rem] text-cry-text-black">
+                    <div class="flex-1 flex flex-col items-end justify-start gap-[1.75rem] max-w-full">
+                        <div
+                            class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[1.25rem] max-w-full">
+                            <div class="w-[3.25rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                                <div class="relative inline-block min-w-[1.938rem]">Year</div>
+                                <div class="self-stretch flex flex-row items-center justify-start text-strokes">
+                                    <div
+                                        class="flex-1 rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] border-[1px] border-solid border-cry-text-black">
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex-1 flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem] box-border min-w-[27.625rem] max-w-full mq750:min-w-full">
+                                <div
+                                    class="self-stretch flex flex-col items-start justify-start gap-[0.312rem] max-w-full">
+                                    <div class="relative">Name of the Achievement</div>
+                                    <div
+                                        class="self-stretch flex flex-row items-end justify-start gap-[0.062rem] max-w-full text-gp-green mq750:flex-wrap">
+                                        <div
+                                            class="flex-1 rounded bg-crm-white box-border overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] min-w-[4.25rem] max-w-full border-[1px] border-solid border-cry-text-black">
+                                            <input
+                                                class="w-[4.25rem] [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] relative text-strokes text-left flex items-center p-0"
+                                                placeholder="Add Skills " type="text" />
+                                        </div>
+                                        <div
+                                            class="rounded-lg flex flex-row items-start justify-start py-[0.25rem] px-[0.75rem] gap-[0.25rem]">
+                                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                                                loading="lazy" alt="" src="/public/materialsymbolsadd.svg" />
+
+                                            <u
+                                                class="relative [text-decoration:underline] inline-block min-w-[1.813rem]">Add</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-row items-start justify-end py-[0rem] px-[0.062rem] text-[1rem] text-crm-white">
+                            <div
+                                class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem]">
+                                <div class="relative font-medium inline-block min-w-[2.375rem]">
+                                    Save
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-end justify-start pt-[0.875rem] pb-[1.125rem] pr-[2.875rem] pl-[0.937rem] gap-[1.75rem] max-w-full border-[1px] border-solid border-strokes mq1050:pr-[1.438rem] mq1050:box-border">
+                <div class="self-stretch flex flex-col items-start justify-start gap-[1.25rem] max-w-full">
+                    <div class="relative font-medium inline-block min-w-[6rem]">
+                        Documents
+                    </div>
+                    <div
+                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[1.187rem] box-border max-w-full text-[0.875rem] text-cry-text-black">
+                        <div
+                            class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-crm-white flex flex-row items-start justify-start pt-[0.375rem] px-[0rem] pb-[2.562rem] box-border gap-[5.125rem] max-w-full mq450:gap-[1.25rem] mq750:flex-wrap mq750:gap-[2.563rem]">
+                            <div
+                                class="w-[7.25rem] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.125rem]">
+                                <div class="relative text-[1rem] font-medium inline-block min-w-[5.5rem]">
+                                    Document
+                                </div>
+                                <div class="relative inline-block min-w-[4.813rem]">
+                                    Document
+                                </div>
+                                <div class="relative inline-block min-w-[4.813rem]">
+                                    Document
+                                </div>
+                                <div class="relative inline-block min-w-[4.813rem]">
+                                    Document
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[0.706rem]">
+                                <div
+                                    class="flex flex-row items-start justify-start py-[0rem] pr-[0.937rem] pl-[0.875rem] text-[1rem]">
+                                    <div class="relative font-medium">Upload Documents</div>
+                                </div>
+                                <div
+                                    class="rounded flex flex-row items-start justify-start pt-[0.125rem] px-[0.625rem] pb-[0rem] gap-[0.625rem] border-b-[1px] border-solid border-strokes">
+                                    <div
+                                        class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                        <div class="relative">Upload Documents</div>
+                                    </div>
+                                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                        loading="lazy" alt="" src="/public/materialsymbolsupload.svg" />
+                                </div>
+                                <div
+                                    class="rounded flex flex-row items-start justify-start pt-[0.125rem] px-[0.625rem] pb-[0rem] gap-[0.625rem] border-b-[1px] border-solid border-strokes">
+                                    <div
+                                        class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                        <div class="relative">Upload Documents</div>
+                                    </div>
+                                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                        loading="lazy" alt="" src="/public/materialsymbolsupload.svg" />
+                                </div>
+                                <div
+                                    class="rounded flex flex-row items-start justify-start pt-[0.125rem] px-[0.625rem] pb-[0rem] gap-[0.625rem] border-b-[1px] border-solid border-strokes">
+                                    <div
+                                        class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                        <div class="relative">Upload Documents</div>
+                                    </div>
+                                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                        loading="lazy" alt="" src="/public/materialsymbolsupload.svg" />
+                                </div>
+                            </div>
+                            <div class="w-[10.5rem] flex flex-row items-start justify-start gap-[1.875rem] text-[1rem]">
+                                <div class="flex-1 flex flex-col items-start justify-start gap-[1rem]">
+                                    <div class="relative font-medium inline-block min-w-[4.688rem]">
+                                        Received
+                                    </div>
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+                                </div>
+                                <div class="w-[3.938rem] flex flex-col items-start justify-start gap-[1rem]">
+                                    <div class="relative font-medium inline-block min-w-[3.938rem]">
+                                        Verified
+                                    </div>
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem] text-crm-white">
+                    <div class="relative font-medium inline-block min-w-[2.375rem]">
+                        Save
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.687rem] pb-[1.125rem] pr-[0.187rem] pl-[0.937rem] gap-[1.125rem] max-w-full border-[1px] border-solid border-strokes">
+                <div
+                    class="w-[49.563rem] flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq450:flex-wrap">
+                    <div class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                        <div class="relative font-medium inline-block min-w-[6.688rem]">
+                            Employment
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-lg flex flex-row items-start justify-start p-[0.25rem] gap-[0.25rem] text-[0.875rem]">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]" alt=""
+                            src="/public/materialsymbolsadd.svg" />
+
+                        <u class="relative [text-decoration:underline] inline-block min-w-[7.25rem]">Add Preferences</u>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch flex flex-row flex-wrap items-start justify-start py-[0rem] pr-[0.75rem] pl-[0rem] box-border gap-[1.25rem_0.937rem] min-h-[11.688rem] text-[0.875rem] text-cry-text-black">
+                    <div class="flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[4.875rem]">
+                            Applied for
+                        </div>
+                        <div
+                            class="rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.687rem] border-[1px] border-solid border-strokes">
+                            <div class="relative">XXXXXXXXXXXXXXXXX</div>
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.938rem]">Add to</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-start py-[0.125rem] px-[0.5rem] gap-[5.875rem] whitespace-nowrap border-[1px] border-solid border-strokes">
+                            <div class="relative inline-block min-w-[5.5rem]">
+                                Client ABCD
+                            </div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain hidden"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.813rem]">Status</div>
+                        <div
+                            class="rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.437rem] gap-[0.937rem] whitespace-nowrap text-red border-[1px] border-solid border-strokes">
+                            <div class="relative inline-block min-w-[8rem]">
+                                Rejected by Client
+                            </div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="w-[13.563rem] flex flex-col items-start justify-center gap-[0.375rem] opacity-[0.3]">
+                        <div class="relative inline-block min-w-[4.938rem]">Comments</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.562rem] border-[1px] border-solid border-cry-text-black">
+                            <input
+                                class="w-full [border:none] [outline:none] font-body-text text-[0.875rem] bg-[transparent] h-[1.063rem] flex-1 relative text-strokes text-left flex items-center min-w-[7.375rem] p-0"
+                                placeholder="XXXXXXXXXXXXXXXXXXXXXX" type="text" />
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[7.125rem]">
+                            Primary Interest
+                        </div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.938rem]">Add to</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.813rem]">Status</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[4.938rem]">Comments</div>
+                        <div
+                            class="rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.562rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative">XXXXXXXXXXXXXXXXXXXXXX</div>
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative">Secondary Interest</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.938rem]">Add to</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="w-[11.063rem] flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[2.813rem]">Status</div>
+                        <div
+                            class="self-stretch rounded bg-crm-white overflow-hidden flex flex-row items-center justify-between py-[0.125rem] px-[0.437rem] gap-[1.25rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative inline-block min-w-[2.688rem]">Select</div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                                alt="" src="/public/iconamoonarrowup2bold.svg" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-start justify-center gap-[0.375rem]">
+                        <div class="relative inline-block min-w-[4.938rem]">Comments</div>
+                        <div
+                            class="rounded bg-crm-white overflow-hidden flex flex-row items-center justify-center py-[0.125rem] px-[0.562rem] text-strokes border-[1px] border-solid border-cry-text-black">
+                            <div class="relative">XXXXXXXXXXXXXXXXXXXXXX</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-stretch flex flex-row items-start justify-end py-[0rem] px-[2.687rem] text-crm-white">
+                    <div
+                        class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.25rem] px-[3.75rem]">
+                        <div class="relative font-medium inline-block min-w-[2.375rem]">
+                            Save
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] pl-[0.5rem] pr-[1.5rem] box-border max-w-full text-left text-[1rem] text-gp-green font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div
+                class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.75rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                    <div class="relative font-medium">Previous Activities</div>
+                    <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                        type="checkbox" />
+                </div>
+                <div
+                    class="w-[48.813rem] flex flex-row items-start justify-start py-[0rem] px-[1.187rem] box-border max-w-full text-cry-text-black">
+                    <div
+                        class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-crm-white flex flex-row items-start justify-start pt-[0.375rem] px-[0rem] pb-[0.5rem] box-border gap-[7.125rem] max-w-full mq450:gap-[1.75rem] mq750:gap-[3.563rem] mq1050:flex-wrap">
+                        <div
+                            class="flex flex-col items-start justify-start py-[0rem] pr-[4.187rem] pl-[0rem] gap-[1.25rem]">
+                            <div class="relative font-medium inline-block min-w-[3.625rem]">
+                                Project
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                <a
+                                    class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.125rem]">Project</a>
+                                <a
+                                    class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.125rem]">Project</a>
+                                <a
+                                    class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.125rem]">Project</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                            <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.312rem] pl-[0.375rem]">
+                                <div class="relative font-medium inline-block min-w-[5.063rem]">
+                                    Attended
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                <div class="relative inline-block min-w-[5.75rem]">
+                                    Rescheduled
+                                </div>
+                                <div class="relative inline-block min-w-[5.75rem]">
+                                    Rescheduled
+                                </div>
+                                <div class="relative inline-block min-w-[5.75rem]">
+                                    Rescheduled
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] gap-[1.25rem]">
+                            <div class="relative font-medium inline-block min-w-[3.25rem]">
+                                Status
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                <a class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                    Hold</a>
+                                <a class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                    Hold</a>
+                                <a class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                    Hold</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                            <div class="relative font-medium inline-block min-w-[2.688rem]">
+                                XXXX
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                <div class="relative inline-block min-w-[2.25rem]">YYYY</div>
+                                <div class="relative inline-block min-w-[2.25rem]">YYYY</div>
+                                <div class="relative inline-block min-w-[2.25rem]">YYYY</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
