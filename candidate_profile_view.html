@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" />
+
+    <style>
+        @font-face {
+            font-family: "Segoe UI";
+            src: url("./public/SEGOEUI.TTF");
+            font-weight: 500;
+        }
+
+        *,
+        ::before,
+        ::after {
+            border-width: 0;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+            theme: {
+                extend: {
+                    colors: {
+                        "crm-white": "#fff",
+                        strokes: "#c7c7c7",
+                        "cry-text-black": "#000",
+                        "gp-green": "#005f6b",
+                        red: "#ff0000",
+                        silver: "rgba(199, 199, 199, 0.1)",
+                        gainsboro: "#d9d9d9",
+                        lime: "#12ff38",
+                        darkslategray: "#00606b",
+                    },
+                    spacing: {},
+                    fontFamily: {
+                        "body-text": "Montserrat",
+                        "segoe-ui": "'Segoe UI'",
+                    },
+                },
+                fontSize: {
+                    sm: "0.875rem",
+                    base: "1rem",
+                    xs: "0.75rem",
+                    xl: "1.25rem",
+                    "5xl": "1.5rem",
+                    inherit: "inherit",
+                },
+                screens: {
+                    lg: {
+                        max: "1200px",
+                    },
+                    mq1050: {
+                        raw: "screen and (max-width: 1050px)",
+                    },
+                    mq750: {
+                        raw: "screen and (max-width: 750px)",
+                    },
+                    mq450: {
+                        raw: "screen and (max-width: 450px)",
+                    },
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <div
+        class="w-full relative bg-white overflow-hidden flex flex-col items-end justify-start pt-[0rem] pb-[2.312rem] pr-[2.5rem] pl-[0rem] box-border gap-[1.25rem] leading-[normal] tracking-[normal]">
+        <section
+            class="self-stretch flex flex-row items-start justify-start gap-[1.25rem] max-w-full text-left text-[1.25rem] text-darkslategray-200 font-body-text mq1050:pl-[1.25rem] mq1050:pr-[1.25rem] mq1050:box-border">
+            <div
+                class="[background:linear-gradient(90deg,_#005f6b,_#005f6b_76.5%)] overflow-hidden flex flex-col items-start justify-start pt-[1.375rem] pb-[3.187rem] pr-[0.625rem] pl-[1rem] gap-[1.25rem] border-[0.3px] border-solid border-white mq750:pb-[1.313rem] mq750:box-border mq1050:hidden mq1050:pt-[1.25rem] mq1050:pb-[2.063rem] mq1050:box-border">
+                <div class="flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.062rem]">
+                    <img class="h-[3.563rem] w-[3.438rem] relative object-cover" loading="lazy" alt=""
+                        src="/public/image-12@2x.png" />
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/materialsymbolslighthomeoutline.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.875rem] pl-[0.312rem]">
+                    <div class="flex flex-col items-end justify-start gap-[1.187rem]">
+                        <div class="flex flex-row items-start justify-end py-[0rem] pr-[0.25rem] pl-[0.5rem]">
+                            <div class="h-[2.063rem] w-[1.5rem] relative">
+                                <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                    loading="lazy" alt="" src="/public/grommeticonsprojects.svg" />
+
+                                <div
+                                    class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="h-[2.75rem] flex flex-col items-start justify-center p-[0.5rem] box-border relative gap-[0.5rem]">
+                            <div
+                                class="w-[2.5rem] h-[2.5rem] absolute !m-[0] top-[0.125rem] left-[-0.125rem] rounded-[50%] bg-white">
+                            </div>
+                            <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0 z-[1]" alt=""
+                                src="/public/bxsdata.svg" />
+
+                            <div
+                                class="w-[1.25rem] h-[0.063rem] relative box-border z-[1] border-t-[1px] border-solid border-darkslategray-200">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/fluentmdl2website.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="flex flex-col items-start justify-start gap-[1.687rem]">
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/materialsymbolsdeleteoutline.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                            </div>
+                        </div>
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/antdesigndatabaseoutlined.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                            </div>
+                        </div>
+                        <div class="w-[1.5rem] h-[2.063rem] relative">
+                            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                                loading="lazy" alt="" src="/public/iconoirsettingsprofiles.svg" />
+
+                            <div
+                                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/mditick.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-row items-start justify-start pt-[0rem] pb-[14.375rem] pr-[1.125rem] pl-[0.812rem]">
+                    <div class="h-[2.063rem] w-[1.5rem] relative">
+                        <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden"
+                            loading="lazy" alt="" src="/public/tablernotification.svg" />
+
+                        <div
+                            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start justify-start pt-[0rem] px-[0.75rem] pb-[1.25rem]">
+                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                        src="/public/materialsymbolssettingsoutline.svg" />
+                </div>
+                <div class="flex flex-row items-start justify-start py-[0rem] px-[0.75rem]">
+                    <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                        src="/public/fasolidpoweroff.svg" />
+                </div>
+            </div>
+            <div
+                class="flex-1 flex flex-col items-start justify-start pt-[1.75rem] px-[0rem] pb-[0rem] box-border max-w-[calc(100%_-_101px)] mq1050:max-w-full">
+                <div class="self-stretch flex flex-col items-end justify-start gap-[0.687rem] max-w-full">
+                    <header
+                        class="self-stretch flex flex-row items-start justify-between py-[0rem] pr-[0rem] pl-[1rem] box-border max-w-full gap-[1.25rem] text-left text-[1.5rem] text-darkslategray-200 font-body-text">
+                        <div
+                            class="flex flex-col items-start justify-start pt-[0.5rem] px-[0rem] pb-[0rem] box-border max-w-full">
+                            <h2 class="m-0 relative text-inherit font-bold font-inherit whitespace-nowrap mq750:hidden">
+                                View the Candidate Profile
+                            </h2>
+                        </div>
+                        <div
+                            class="flex flex-row items-start justify-start gap-[2.625rem] text-[1rem] font-segoe-ui mq450:gap-[1.313rem]">
+                            <div class="flex flex-col items-start justify-start pt-[0.812rem] px-[0rem] pb-[0rem]">
+                                <div class="flex flex-row items-start justify-start gap-[1.25rem]">
+                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                        alt="" src="/public/tablersearch.svg" />
+
+                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                        alt="" src="/public/mdipluscircleoutline.svg" />
+
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.5rem] pl-[0rem]">
+                                        <img class="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0" alt=""
+                                            src="/public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
+                                    </div>
+                                    <a
+                                        class="[text-decoration:none] relative font-medium text-[inherit] inline-block min-w-[3.438rem]">Admin</a>
+                                </div>
+                            </div>
+                            <img class="h-[3.125rem] w-[3.125rem] relative rounded-[50%] object-cover" loading="lazy"
+                                alt="" src="/public/ellipse-18@2x.png" />
+                        </div>
+                    </header>
+                    <div
+                        class="self-stretch h-[0.563rem] flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[0.5rem] box-border max-w-full">
+                        <div
+                            class="self-stretch flex-1 relative box-border max-w-full border-t-[1px] border-dashed border-darkslategray-100">
+                        </div>
+                    </div>
+                    <div
+                        class="w-full flex flex-row items-start justify-end py-[0rem] px-[3rem] box-border max-w-full lg:pl-[1.5rem] lg:pr-[1.5rem] lg:box-border">
+                        <div class="flex-1 flex flex-col items-end justify-start gap-[1.25rem] max-w-full">
+                            <div
+                                class="self-stretch rounded-xl bg-white box-border overflow-hidden flex flex-row flex-wrap items-start justify-start pt-[1.437rem] px-[1rem] pb-[0.312rem] gap-[1.5rem] max-w-full border-[1px] border-solid border-strokes">
+                                <div class="w-[11.25rem] flex flex-row items-start justify-start">
+                                    <div class="h-[11.25rem] flex-1 relative">
+                                        <div
+                                            class="absolute top-[0rem] left-[0rem] rounded-[50%] box-border w-full h-full border-[0px] border-solid border-lime">
+                                        </div>
+                                        <div
+                                            class="absolute w-[calc(100%_-_20px)] top-[0.625rem] right-[0.625rem] left-[0.625rem] rounded-[50%] bg-gainsboro box-border h-[10rem] z-[1] border-[0px] border-solid border-cry-text-black">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-col items-start justify-start gap-[1rem] min-w-[37.75rem] max-w-full mq1050:min-w-full">
+                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                        <h3
+                                            class="m-0 relative text-inherit font-semibold font-inherit mq450:text-[1rem]">
+                                            Name of the Candidate
+                                        </h3>
+                                        <input class="m-0 h-[1.375rem] w-[1.25rem]" type="checkbox" />
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-col items-end justify-start gap-[0.75rem] max-w-full text-[0.875rem] text-cry-text-black">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] text-[1rem] text-darkslategray-200 mq750:flex-wrap">
+                                            <div class="relative font-medium">
+                                                Name of the Candidate
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-start justify-start pt-[0.25rem] px-[0rem] pb-[0rem]">
+                                                <div class="relative font-medium whitespace-nowrap">
+                                                    Created by Admin 1 at 00:00 hrs
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-col items-start justify-start gap-[0.437rem] max-w-full">
+                                            <div
+                                                class="self-stretch h-[0.063rem] relative box-border border-t-[1px] border-solid border-strokes">
+                                            </div>
+                                            <div
+                                                class="w-[39rem] flex flex-row items-start justify-start py-[0rem] px-[0.062rem] box-border max-w-full">
+                                                <div
+                                                    class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq450:flex-wrap">
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/materialsymbolscalloutline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                                                            <div
+                                                                class="relative whitespace-pre-wrap inline-block min-w-[7.375rem] shrink-0">
+                                                                +91 99999 99999
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/mingcutedepartmentline.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                            <div class="relative inline-block min-w-[5.5rem]">
+                                                                Department
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq1050:flex-wrap">
+                                            <div class="flex flex-col items-start justify-start gap-[0.812rem]">
+                                                <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                        alt="" src="/public/materialsymbolsmailoutline.svg" />
+
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                                                        <div class="relative whitespace-nowrap">
+                                                            Namenamename@gmail.com
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                        alt="" src="/public/mingcutelocationline.svg" />
+
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                                                        <div class="relative">
+                                                            Hyderabad, Telangana, India
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="w-[26.875rem] flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem] box-border max-w-full">
+                                                <div
+                                                    class="self-stretch flex flex-col items-start justify-start gap-[0.75rem] max-w-full">
+                                                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                            alt="" src="/public/iconparkoutlinedegreehat.svg" />
+
+                                                        <div
+                                                            class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                            <div class="relative inline-block min-w-[3.25rem]">
+                                                                Degree
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.062rem] box-border max-w-full">
+                                                        <div
+                                                            class="flex-1 flex flex-col items-start justify-start max-w-full">
+                                                            <div
+                                                                class="flex flex-row items-start justify-start gap-[0.687rem]">
+                                                                <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0"
+                                                                    alt="" src="/public/phsuitcasebold.svg" />
+
+                                                                <div
+                                                                    class="flex flex-col items-start justify-start pt-[0.187rem] px-[0rem] pb-[0rem]">
+                                                                    <div class="relative inline-block min-w-[7.688rem]">
+                                                                        00 Yrs 00 Months
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="self-stretch flex flex-row items-start justify-end mt-[-0.188rem] text-[1rem] text-darkslategray-200">
+                                                                <div class="relative font-medium">
+                                                                    Profile last updated by Admin 1
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="self-stretch flex flex-row items-start justify-start gap-[1.312rem] max-w-full text-[1rem] mq1050:flex-wrap">
+                                <div
+                                    class="w-[20.75rem] flex flex-col items-start justify-start gap-[1.25rem] min-w-[20.75rem] max-w-full mq1050:flex-1">
+                                    <div
+                                        class="self-stretch rounded-lg overflow-hidden flex flex-col items-start justify-start pt-[0.625rem] px-[0rem] pb-[0.937rem] gap-[1.5rem] border-[1px] border-solid border-strokes">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-center py-[0rem] px-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[5.938rem]">
+                                                Quick Links
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-col items-start justify-start gap-[0.5rem] text-[0.875rem]">
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start py-[0.5rem] px-[0.75rem] border-t-[1px] border-solid border-silver border-b-[1px]">
+                                                <div class="relative">Profile Description</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Personal Information</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[7.813rem]">
+                                                    Additional Details
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.625rem]">
+                                                    Qualification
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.375rem]">
+                                                    Registration
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[4.875rem]">
+                                                    Experience
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Skills & Recognition</div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.188rem]">
+                                                    Documents
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[5.813rem]">
+                                                    Employment
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.687rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative inline-block min-w-[8rem]">
+                                                    Previous Activities
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="self-stretch [filter:drop-shadow(2px_2px_4px_rgba(0,_0,_0,_0.2))] flex flex-row items-start justify-start pt-[0.625rem] px-[0.75rem] pb-[0.5rem] border-b-[1px] border-solid border-silver">
+                                                <div class="relative">Interview Summary</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded-lg bg-white flex flex-col items-start justify-start py-[0.375rem] px-[0.125rem] gap-[0.75rem] border-[1px] border-solid border-strokes">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-center py-[0rem] px-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[7.063rem]">
+                                                Quick Actions
+                                            </div>
+                                        </div>
+                                        <div class="self-stretch h-[5.25rem] relative">
+                                            <img class="absolute top-[0.5rem] left-[0.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/gridiconsaddoutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[3.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/materialsymbolsnotes.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[6.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/mdivideooutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[9.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/mdideleteclockoutline.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[12.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/claritynotificationline.svg" />
+
+                                            <img class="absolute top-[0rem] left-[15rem] w-[2.25rem] h-[2.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/phflag.svg" />
+
+                                            <img class="absolute top-[0.5rem] left-[18.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/materialsymbolslabeloutline.svg" />
+
+                                            <img class="absolute top-[3.5rem] left-[0.5rem] w-[1.25rem] h-[1.25rem] overflow-hidden"
+                                                loading="lazy" alt="" src="/public/mdiclockoutline.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex-1 flex flex-col items-start justify-start gap-[1.25rem] min-w-[33.5rem] max-w-full mq750:min-w-full">
+                                    <div
+                                        class="self-stretch rounded-lg overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[2.25rem] gap-[0.75rem] border-[1px] border-solid border-strokes">
+                                        <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                            <div class="relative font-medium">
+                                                Profile Description
+                                            </div>
+                                            <input
+                                                class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                type="checkbox" />
+                                        </div>
+                                        <p class="m-0 self-stretch relative text-[0.875rem] text-cry-text-black">
+                                            Lorem ipsum dolor sit amet consectetur. Vel diam at
+                                            consectetur nunc. Sed sed ac diam cum cras facilisis.
+                                            Sodales ac sit viverra non tincidunt sit quis. Purus
+                                            enim eu orci sed nunc. Nunc aliquam a donec dui quis
+                                            odio gravida et. Velit risus quam integer amet et.
+                                            Ornare morbi velit nisl metus id ante amet.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.125rem] gap-[1.875rem] max-w-full border-[1px] border-solid border-strokes">
+                                        <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                                            <div class="relative font-medium">Personal Details</div>
+                                            <input
+                                                class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                type="checkbox" />
+                                        </div>
+                                        <div
+                                            class="w-[47rem] flex flex-row items-start justify-start py-[0rem] px-[1.25rem] box-border max-w-full text-[0.75rem] text-cry-text-black">
+                                            <div
+                                                class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq750:flex-wrap">
+                                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[2.813rem]">
+                                                            Gender
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[3.813rem]">
+                                                            Female
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[4.938rem]">
+                                                            Date Of Birth
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[6.563rem]">
+                                                            DD.MM.YYYY
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[5.125rem]">
+                                                            Marital Status
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[3.938rem]">
+                                                            Married
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[5.875rem]">
+                                                            Children (if any)
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.563rem]">
+                                                            NA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="w-[29.063rem] flex flex-col items-start justify-start gap-[1.25rem] max-w-full">
+                                                    <div
+                                                        class="self-stretch flex flex-col items-start justify-start gap-[0.25rem] max-w-full">
+                                                        <div
+                                                            class="w-[23rem] flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq750:flex-wrap">
+                                                            <div
+                                                                class="flex flex-row items-start justify-start gap-[2.875rem] mq450:flex-wrap mq450:gap-[1.438rem]">
+                                                                <div
+                                                                    class="flex flex-col items-start justify-start gap-[1rem] min-w-[7.25rem] mq450:flex-1">
+                                                                    <div
+                                                                        class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                                        <div
+                                                                            class="relative font-light inline-block min-w-[2.625rem]">
+                                                                            Height
+                                                                        </div>
+                                                                        <div
+                                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.875rem]">
+                                                                            5’7”
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.5rem] gap-[0.25rem]">
+                                                                        <div
+                                                                            class="relative font-light inline-block min-w-[1.5rem]">
+                                                                            Age
+                                                                        </div>
+                                                                        <div
+                                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.25rem]">
+                                                                            30
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="relative font-light inline-block min-w-[7.25rem]">
+                                                                        Temporary Address
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                                                    <div
+                                                                        class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                                        <div
+                                                                            class="relative font-light inline-block min-w-[2.75rem]">
+                                                                            Weight
+                                                                        </div>
+                                                                        <div
+                                                                            class="relative text-[1rem] font-medium inline-block min-w-[2.75rem]">
+                                                                            75 kg
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                                        <div
+                                                                            class="relative font-light inline-block min-w-[5.188rem]">
+                                                                            Place Of Birth
+                                                                        </div>
+                                                                        <div
+                                                                            class="relative text-[1rem] font-medium inline-block min-w-[5.625rem]">
+                                                                            Hyderabad
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                                <div
+                                                                    class="relative font-light inline-block min-w-[1.563rem]">
+                                                                    BMI
+                                                                </div>
+                                                                <div
+                                                                    class="relative text-[1rem] font-medium inline-block min-w-[2.625rem]">
+                                                                    30.73
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="relative text-[1rem] font-medium">
+                                                            Hyderabad, Hyderabad, Hyderabad, Hyderabad,
+                                                            5000000
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="self-stretch flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[7.438rem]">
+                                                            Permanent Address
+                                                        </div>
+                                                        <div class="relative text-[1rem] font-medium">
+                                                            Hyderabad, Hyderabad, Hyderabad, Hyderabad,
+                                                            5000000
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.125rem] gap-[1.875rem] max-w-full text-cry-text-black border-[1px] border-solid border-strokes">
+                                        <div
+                                            class="flex flex-row items-start justify-start gap-[1.875rem] text-darkslategray-200">
+                                            <div class="relative font-medium">
+                                                Additional Details
+                                            </div>
+                                            <input
+                                                class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                type="checkbox" />
+                                        </div>
+                                        <div
+                                            class="w-[35.375rem] flex flex-row items-start justify-start py-[0rem] px-[1.187rem] box-border max-w-full text-[0.75rem]">
+                                            <div
+                                                class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq750:flex-wrap">
+                                                <div
+                                                    class="flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] gap-[0.625rem]">
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.625rem] gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[3.313rem]">
+                                                            Passport
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[4.625rem]">
+                                                            XXXXXXX
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.625rem] gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[3.063rem]">
+                                                            Religion
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[3.188rem]">
+                                                            Hindu
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.625rem] gap-[0.25rem]">
+                                                        <div class="relative font-light">
+                                                            International Experience
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.563rem]">
+                                                            NA
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.625rem] gap-[0.625rem]">
+                                                        <div class="relative font-light">
+                                                            English Language Test
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.563rem]">
+                                                            NA
+                                                        </div>
+                                                    </div>
+                                                    <div class="relative font-light">
+                                                        Pro-Metric Language Test
+                                                    </div>
+                                                    <div
+                                                        class="relative text-[1rem] font-medium inline-block min-w-[1.563rem]">
+                                                        NA
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                                    <div
+                                                        class="flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.25rem]">
+                                                        <div
+                                                            class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                            <div
+                                                                class="relative font-light inline-block min-w-[3.563rem]">
+                                                                Issued on
+                                                            </div>
+                                                            <div
+                                                                class="relative text-[1rem] font-medium inline-block min-w-[6.563rem]">
+                                                                DD.MM.YYYY
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="flex flex-row items-start justify-start">
+                                                            <div
+                                                                class="relative font-light inline-block min-w-[4.063rem]">
+                                                                Nationality
+                                                            </div>
+                                                            <div class="h-[0.938rem] w-[0rem] hidden"></div>
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[3.25rem]">
+                                                            Indian
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                        <div class="relative font-light inline-block min-w-[3rem]">
+                                                            Country
+                                                        </div>
+                                                        <div
+                                                            class="relative text-[1rem] font-medium inline-block min-w-[1.563rem]">
+                                                            NA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex flex-col items-start justify-start gap-[0.25rem]">
+                                                    <div class="relative font-light inline-block min-w-[3.875rem]">
+                                                        Expires on
+                                                    </div>
+                                                    <div
+                                                        class="relative text-[1rem] font-medium inline-block min-w-[6.563rem]">
+                                                        DD.MM.YYYY
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                                            Expert
+                                        </div>
+                                        <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                                            Expert
+                                        </div>
+                                        <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                                            Expert
+                                        </div>
+                                        <div class="w-[3.375rem] h-[0rem] relative font-medium hidden">
+                                            Expert
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="w-[75%] flex flex-row items-start justify-end py-[0rem] px-[3rem] box-border max-w-full text-left text-[1rem] text-darkslategray-200 font-body-text mq1050:pl-[1.5rem] mq1050:pr-[1.5rem] mq1050:box-border">
+            <div class="flex-1 flex flex-col items-start justify-start gap-[1.25rem] max-w-full">
+                <div
+                    class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start py-[0.875rem] px-[0.937rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                        <div class="relative font-medium inline-block min-w-[6.5rem]">
+                            Qualification
+                        </div>
+                        <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                            type="checkbox" />
+                    </div>
+                    <div
+                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.062rem] pl-[1.187rem] box-border max-w-full text-cry-text-black">
+                        <div
+                            class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-row items-start justify-start pt-[0.375rem] px-[0rem] pb-[0.5rem] box-border gap-[3.625rem] max-w-full mq750:gap-[1.813rem] mq1050:flex-wrap">
+                            <div
+                                class="w-[7.75rem] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.25rem]">
+                                <div class="relative font-medium inline-block min-w-[3.813rem]">
+                                    Degree
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                    <div class="relative inline-block min-w-[3.25rem]">
+                                        Degree
+                                    </div>
+                                    <div class="relative inline-block min-w-[3.25rem]">
+                                        Degree
+                                    </div>
+                                    <div class="relative inline-block min-w-[3.25rem]">
+                                        Degree
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                <div class="relative font-medium">College Attended</div>
+                                <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                    <div class="relative inline-block min-w-[7.688rem]">
+                                        College Attended
+                                    </div>
+                                    <div class="relative inline-block min-w-[7.688rem]">
+                                        College Attended
+                                    </div>
+                                    <div class="relative inline-block min-w-[7.688rem]">
+                                        College Attended
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-[8.375rem] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.25rem]">
+                                <div class="relative font-medium inline-block min-w-[5.063rem]">
+                                    University
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                    <a
+                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[4.375rem]">University</a>
+                                    <a
+                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[4.375rem]">University</a>
+                                    <a
+                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[4.375rem]">University</a>
+                                </div>
+                            </div>
+                            <div class="w-[8.75rem] flex flex-row items-start justify-between gap-[1.25rem]">
+                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                    <div class="relative font-medium inline-block min-w-[2.75rem]">
+                                        From
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.375rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.375rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                    <div class="relative font-medium inline-block min-w-[1.188rem]">
+                                        To
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.187rem] box-border max-w-full">
+                    <div
+                        class="flex-1 rounded-lg box-border overflow-hidden flex flex-col items-start justify-start py-[0.875rem] px-[0.937rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                        <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                            <div class="relative font-medium inline-block min-w-[6.75rem]">
+                                Registrations
+                            </div>
+                            <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                type="checkbox" />
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.062rem] pl-[1.187rem] box-border max-w-full text-cry-text-black">
+                            <div
+                                class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white overflow-x-auto flex flex-row items-start justify-start pt-[0.375rem] pb-[0.5rem] pr-[0.875rem] pl-[0rem] box-border gap-[1.5rem] max-w-full">
+                                <div
+                                    class="flex flex-row items-start justify-start py-[0rem] pr-[0.875rem] pl-[0rem] gap-[2.5rem] mq750:flex-wrap mq450:gap-[1.25rem]">
+                                    <div
+                                        class="flex flex-col items-start justify-start gap-[1.25rem] min-w-[7.938rem] mq750:flex-1">
+                                        <div class="relative font-medium inline-block min-w-[7.938rem]">
+                                            Registration No
+                                        </div>
+                                        <div
+                                            class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[3.25rem]">
+                                                Degree
+                                            </div>
+                                            <div class="relative inline-block min-w-[3.25rem]">
+                                                Degree
+                                            </div>
+                                            <div class="relative inline-block min-w-[3.25rem]">
+                                                Degree
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start gap-[1.25rem] min-w-[10.313rem] mq750:flex-1">
+                                        <div class="relative font-medium">
+                                            Registration Council
+                                        </div>
+                                        <div
+                                            class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[7.688rem]">
+                                                College Attended
+                                            </div>
+                                            <div class="relative inline-block min-w-[7.688rem]">
+                                                College Attended
+                                            </div>
+                                            <div class="relative inline-block min-w-[7.688rem]">
+                                                College Attended
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-row items-start justify-start gap-[2.562rem] mq450:flex-wrap mq450:gap-[1.25rem]">
+                                    <div
+                                        class="flex flex-col items-start justify-start gap-[1.25rem] min-w-[8.875rem] mq450:flex-1">
+                                        <div class="relative font-medium">Registration Type</div>
+                                        <div
+                                            class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[3.5rem]">
+                                                Primary
+                                            </div>
+                                            <div class="relative inline-block min-w-[4.688rem]">
+                                                Secondary
+                                            </div>
+                                            <div class="relative inline-block min-w-[3.313rem]">
+                                                Tertiary
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start gap-[1.25rem] min-w-[5.688rem] mq450:flex-1">
+                                        <div
+                                            class="flex flex-row items-start justify-start py-[0rem] pr-[1.687rem] pl-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[2.75rem]">
+                                                From
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[5.688rem]">
+                                                DD.MM.YYYY
+                                            </div>
+                                            <div class="relative inline-block min-w-[5.688rem]">
+                                                DD.MM.YYYY
+                                            </div>
+                                            <div class="relative inline-block min-w-[5.688rem]">
+                                                DD.MM.YYYY
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                    <div class="flex flex-row items-start justify-start py-[0rem] px-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[1.188rem]">
+                                            To
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[5.688rem]">
+                                            DD.MM.YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[5.688rem]">
+                                            DD.MM.YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[5.688rem]">
+                                            DD.MM.YYYY
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] pb-[2.25rem] pr-[0.937rem] pl-[1rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes mq750:pt-[1.25rem] mq750:pb-[1.438rem] mq750:box-border">
+                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                        <div class="relative font-medium inline-block min-w-[5.688rem]">
+                            Experience
+                        </div>
+                        <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                            type="checkbox" />
+                    </div>
+                    <div
+                        class="self-stretch flex flex-col items-start justify-start gap-[1.25rem] max-w-full text-cry-text-black">
+                        <div
+                            class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[0.75rem] max-w-full">
+                            <div class="flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[0rem]">
+                                <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0" loading="lazy"
+                                    alt="" src="/public/materialsymbolsmenu.svg" />
+                            </div>
+                            <div
+                                class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[1.875rem] box-border gap-[2.125rem] min-w-[30.875rem] max-w-full mq750:gap-[1.063rem] mq750:min-w-full">
+                                <div
+                                    class="w-[46.438rem] flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq750:flex-wrap">
+                                    <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.625rem]">
+                                            Organization
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[3rem]">
+                                            XYZ123
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.25rem]">
+                                            Designation
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[5.813rem]">
+                                            Lab Incharge
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.5rem] pl-[0rem] gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.375rem]">
+                                            Department
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[1.625rem]">
+                                            ICU
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.25rem] pl-[0rem] gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[2.75rem]">
+                                            From
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                    <div class="w-[9.688rem] flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[1.188rem]">
+                                                To
+                                            </div>
+                                            <div class="relative font-medium inline-block min-w-[5.688rem]">
+                                                Experience
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[2.25rem]">
+                                                YYYY
+                                            </div>
+                                            <div class="relative inline-block min-w-[4.688rem]">
+                                                X yy X mm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.062rem] pl-[0.625rem] box-border max-w-full text-[0.875rem]">
+                                    <p class="m-0 flex-1 relative inline-block max-w-full">
+                                        Lorem ipsum dolor sit amet consectetur. Vel diam at
+                                        consectetur nunc. Sed sed ac diam cum cras facilisis.
+                                        Sodales ac sit viverra non tincidunt sit quis. Purus enim
+                                        eu orci sed nunc. Nunc aliquam a donec dui quis odio
+                                        gravida et. Velit risus quam integer amet et. Ornare morbi
+                                        velit nisl metus id ante amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[0.75rem] max-w-full">
+                            <div class="flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[0rem]">
+                                <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0" alt=""
+                                    src="/public/materialsymbolsmenu.svg" />
+                            </div>
+                            <div
+                                class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[1.875rem] box-border gap-[2.125rem] min-w-[30.875rem] max-w-full mq750:gap-[1.063rem] mq750:min-w-full">
+                                <div
+                                    class="w-[46.438rem] flex flex-row items-start justify-between gap-[1.25rem] max-w-full mq750:flex-wrap">
+                                    <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.625rem]">
+                                            Organization
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[3rem]">
+                                            XYZ123
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.25rem]">
+                                            Designation
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[5.813rem]">
+                                            Lab Incharge
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.5rem] pl-[0rem] gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[6.375rem]">
+                                            Department
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[1.625rem]">
+                                            ICU
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex flex-col items-start justify-start py-[0rem] pr-[0.25rem] pl-[0rem] gap-[1.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[2.75rem]">
+                                            From
+                                        </div>
+                                        <div class="relative text-[0.875rem] inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                    <div class="w-[9.688rem] flex flex-col items-start justify-start gap-[1.25rem]">
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem]">
+                                            <div class="relative font-medium inline-block min-w-[1.188rem]">
+                                                To
+                                            </div>
+                                            <div class="relative font-medium inline-block min-w-[5.688rem]">
+                                                Experience
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="self-stretch flex flex-row items-start justify-between gap-[1.25rem] text-[0.875rem]">
+                                            <div class="relative inline-block min-w-[2.25rem]">
+                                                YYYY
+                                            </div>
+                                            <div class="relative inline-block min-w-[4.688rem]">
+                                                X yy X mm
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.812rem] pl-[0.625rem] box-border max-w-full text-[0.875rem]">
+                                    <p class="m-0 flex-1 relative inline-block max-w-full">
+                                        Lorem ipsum dolor sit amet consectetur. Vel diam at
+                                        consectetur nunc. Sed sed ac diam cum cras facilisis.
+                                        Sodales ac sit viverra non tincidunt sit quis. Purus enim
+                                        eu orci sed nunc. Nunc aliquam a donec dui quis odio
+                                        gravida et. Velit risus quam integer amet et. Ornare morbi
+                                        velit nisl metus id ante amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-stretch flex flex-col items-start justify-start gap-[1.25rem] max-w-full">
+                    <div
+                        class="self-stretch rounded-lg overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[1.062rem] gap-[0.5rem] border-[1px] border-solid border-strokes">
+                        <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                            <div class="relative font-medium inline-block min-w-[2.625rem]">
+                                Skills
+                            </div>
+                            <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                type="checkbox" />
+                        </div>
+                        <div
+                            class="self-stretch rounded bg-white overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] gap-[0.75rem] z-[1] text-[0.875rem] text-cry-text-black border-[1px] border-solid border-strokes mq450:flex-wrap">
+                            <div
+                                class="rounded flex flex-row items-start justify-start py-[0.062rem] px-[0.5rem] border-[0.3px] border-solid border-strokes">
+                                <div class="relative inline-block min-w-[3.875rem]">
+                                    Patience
+                                </div>
+                            </div>
+                            <div
+                                class="rounded flex flex-row items-start justify-start py-[0.062rem] px-[0.5rem] border-[0.3px] border-solid border-strokes">
+                                <div class="relative">Communication Skills</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[0.937rem] pb-[2.562rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                        <div class="relative font-medium inline-block min-w-[6rem]">
+                            Documents
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.187rem] pl-[1.187rem] box-border max-w-full text-[0.875rem] text-cry-text-black">
+                            <div
+                                class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-row items-start justify-between pt-[0.375rem] pb-[2.437rem] pr-[2.937rem] pl-[0rem] box-border max-w-full gap-[1.25rem] mq1050:flex-wrap mq1050:pl-[1.25rem] mq1050:pr-[1.25rem] mq1050:box-border">
+                                <div
+                                    class="w-[7.438rem] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.125rem]">
+                                    <div class="relative text-[1rem] font-medium inline-block min-w-[5.5rem]">
+                                        Document
+                                    </div>
+                                    <div class="relative inline-block min-w-[4.813rem]">
+                                        Document
+                                    </div>
+                                    <div class="relative inline-block min-w-[4.813rem]">
+                                        Document
+                                    </div>
+                                    <div class="relative inline-block min-w-[4.813rem]">
+                                        Document
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[18rem] flex flex-col items-start justify-start py-[0rem] pr-[1.062rem] pl-[0rem] box-border gap-[0.793rem]">
+                                    <div
+                                        class="flex flex-row items-start justify-start gap-[2.312rem] text-[1rem] mq450:flex-wrap mq450:gap-[1.125rem]">
+                                        <div class="relative font-medium">Upload Documents</div>
+                                        <div class="relative font-medium inline-block min-w-[4.688rem]">
+                                            Received
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.687rem] pl-[1.375rem]">
+                                        <div class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]">
+                                            <div
+                                                class="w-[5.25rem] rounded box-border flex flex-row items-start justify-start py-[0rem] px-[0.562rem] gap-[0.625rem] border-[1px] border-solid border-strokes">
+                                                <div
+                                                    class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                                    <a
+                                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[2.125rem]">File
+                                                        1</a>
+                                                </div>
+                                                <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                    loading="lazy" alt="" src="/public/materialsymbolsupload.svg" />
+                                            </div>
+                                            <input class="m-0 h-[1.375rem] w-[1.25rem]" type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.687rem] pl-[1.375rem]">
+                                        <div class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]">
+                                            <div
+                                                class="w-[5.25rem] rounded box-border flex flex-row items-start justify-start py-[0rem] px-[0.562rem] gap-[0.625rem] border-[1px] border-solid border-strokes">
+                                                <div
+                                                    class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                                    <a
+                                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[2.125rem]">File
+                                                        1</a>
+                                                </div>
+                                                <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                    alt="" src="/public/materialsymbolsupload.svg" />
+                                            </div>
+                                            <input class="m-0 h-[1.375rem] w-[1.25rem]" type="checkbox" />
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.687rem] pl-[1.375rem]">
+                                        <div class="flex-1 flex flex-row items-start justify-between gap-[1.25rem]">
+                                            <div
+                                                class="w-[5.25rem] rounded box-border flex flex-row items-start justify-start py-[0rem] px-[0.562rem] gap-[0.625rem] border-[1px] border-solid border-strokes">
+                                                <div
+                                                    class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem]">
+                                                    <a
+                                                        class="[text-decoration:none] relative text-[inherit] inline-block min-w-[2.125rem]">File
+                                                        1</a>
+                                                </div>
+                                                <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                                    alt="" src="/public/materialsymbolsupload.svg" />
+                                            </div>
+                                            <input class="m-0 h-[1.375rem] w-[1.25rem]" type="checkbox" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-[3.938rem] flex flex-col items-start justify-start gap-[1rem] text-[1rem]">
+                                    <div class="relative font-medium inline-block min-w-[3.938rem]">
+                                        Verified
+                                    </div>
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+
+                                    <input class="m-0 self-stretch h-[1.25rem]" type="checkbox" />
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[0.75rem] text-[1rem]">
+                                    <div
+                                        class="flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.187rem]">
+                                        <div class="relative font-medium inline-block min-w-[3.875rem]">
+                                            Actions
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-row items-start justify-start gap-[1.062rem]">
+                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            loading="lazy" alt="" src="/public/hugeiconsview.svg" />
+
+                                        <input
+                                            class="m-0 h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            type="checkbox" />
+                                    </div>
+                                    <div class="flex flex-row items-start justify-start gap-[1.062rem]">
+                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            alt="" src="/public/hugeiconsview.svg" />
+
+                                        <input
+                                            class="m-0 h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            type="checkbox" />
+                                    </div>
+                                    <div class="flex flex-row items-start justify-start gap-[1.062rem]">
+                                        <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            alt="" src="/public/hugeiconsview.svg" />
+
+                                        <input
+                                            class="m-0 h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]"
+                                            type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="self-stretch rounded-lg box-border overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[0.937rem] pb-[1.75rem] gap-[1.25rem] max-w-full border-[1px] border-solid border-strokes">
+                        <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                            <div class="relative font-medium">Previous Activities</div>
+                            <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                                type="checkbox" />
+                        </div>
+                        <div
+                            class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0.062rem] pl-[1.187rem] box-border max-w-full text-cry-text-black">
+                            <div
+                                class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-row items-start justify-start pt-[0.375rem] px-[0rem] pb-[0.5rem] box-border gap-[5.937rem] max-w-full mq750:gap-[2.938rem] mq1050:flex-wrap mq450:gap-[1.5rem]">
+                                <div
+                                    class="flex flex-col items-start justify-start py-[0rem] pr-[1.812rem] pl-[0rem] gap-[1.25rem]">
+                                    <div class="relative font-medium inline-block min-w-[3.625rem]">
+                                        Project
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[3.125rem]">
+                                            Project
+                                        </div>
+                                        <div class="relative inline-block min-w-[3.125rem]">
+                                            Project
+                                        </div>
+                                        <div class="relative inline-block min-w-[3.125rem]">
+                                            Project
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col items-start justify-start py-[0rem] pr-[7.187rem] pl-[0rem] gap-[1.25rem]">
+                                    <div class="relative font-medium inline-block min-w-[5.063rem]">
+                                        Attended
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[5.75rem]">
+                                            Rescheduled
+                                        </div>
+                                        <div class="relative inline-block min-w-[5.75rem]">
+                                            Rescheduled
+                                        </div>
+                                        <div class="relative inline-block min-w-[5.75rem]">
+                                            Rescheduled
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                    <div
+                                        class="flex flex-row items-start justify-start py-[0rem] pr-[0.187rem] pl-[0.25rem]">
+                                        <div class="relative font-medium inline-block min-w-[3.25rem]">
+                                            Status
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <a
+                                            class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                            Hold</a>
+                                        <a
+                                            class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                            Hold</a>
+                                        <a
+                                            class="[text-decoration:none] relative text-[inherit] inline-block min-w-[3.688rem]">On
+                                            Hold</a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[1.25rem]">
+                                    <div class="relative font-medium inline-block min-w-[2.688rem]">
+                                        XXXX
+                                    </div>
+                                    <div class="flex flex-col items-start justify-start gap-[0.937rem] text-[0.875rem]">
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                        <div class="relative inline-block min-w-[2.25rem]">
+                                            YYYY
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="self-stretch rounded-lg overflow-hidden flex flex-col items-start justify-start pt-[0.875rem] px-[1rem] pb-[2.25rem] gap-[0.75rem] border-[1px] border-solid border-strokes">
+                    <div class="flex flex-row items-start justify-start gap-[0.75rem]">
+                        <div class="relative font-medium">Interview Summary</div>
+                        <input class="m-0 h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0 min-h-[1.25rem]"
+                            type="checkbox" />
+                    </div>
+                    <p class="m-0 self-stretch relative text-[0.875rem] text-cry-text-black">
+                        Lorem ipsum dolor sit amet consectetur. Vel diam at consectetur
+                        nunc. Sed sed ac diam cum cras facilisis. Sodales ac sit viverra
+                        non tincidunt sit quis. Purus enim eu orci sed nunc. Nunc aliquam
+                        a donec dui quis odio gravida et. Velit risus quam integer amet
+                        et. Ornare morbi velit nisl metus id ante amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
