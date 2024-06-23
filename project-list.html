@@ -6,691 +6,411 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
   <link rel="stylesheet" href="./global.css" />
-  <link rel="stylesheet" href="./project-list.css" />
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
   <style>
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-Regular.ttf");
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-Bold.ttf");
-      font-weight: 500;
-    }
-
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-SemiBold.ttf");
-      font-weight: 600;
+    *,
+    ::before,
+    ::after {
+      border-width: 0;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
   </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+      theme: {
+        extend: {
+          colors: {
+            white: "#fff",
+            black: "#000",
+            strokes: "#c7c7c7",
+            pink: "rgba(252, 192, 192, 0.7)",
+            darkred: "#900000",
+            gainsboro: "#d9d9d9",
+            aquamarine: "rgba(193, 252, 192, 0.7)",
+            green: "#039000",
+            "gp-green": "#005f6b",
+            darkslategray: "#00606b",
+          },
+          spacing: {},
+          fontFamily: {
+            "sub-header": "Montserrat",
+          },
+          borderRadius: {
+            xl: "20px",
+          },
+        },
+        fontSize: {
+          base: "1rem",
+          sm: "0.875rem",
+          xl: "1.25rem",
+          inherit: "inherit",
+        },
+        screens: {
+          mq1125: {
+            raw: "screen and (max-width: 1125px)",
+          },
+          mq1050: {
+            raw: "screen and (max-width: 1050px)",
+          },
+          mq750: {
+            raw: "screen and (max-width: 750px)",
+          },
+          mq450: {
+            raw: "screen and (max-width: 450px)",
+          },
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    }
+  </script>
 </head>
 
 <body>
-  <div class="leads-data-1">
-    <div class="main-menu">
-      <div class="image-12-wrapper">
-        <img class="image-12-icon" loading="lazy" alt="" src="./public/image-12@2x_copy.png" />
+  <div
+    class="w-full relative bg-white overflow-hidden flex flex-row items-start justify-start py-[0rem] pr-[1.125rem] pl-[0rem] box-border leading-[normal] tracking-[normal] [row-gap:20px] text-left text-[1.25rem] text-gp-green font-sub-header mq1125:flex-wrap mq1125:py-[1.125rem] mq1125:pr-[1.25rem] mq1125:pl-[1.125rem] mq1125:box-border">
+    <div
+      class="shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] [background:linear-gradient(90deg,_#005f6b,_#005f6b_76.5%)] overflow-hidden flex flex-col items-start justify-start pt-[1.375rem] pb-[3.187rem] pr-[0.625rem] pl-[1rem] gap-[1.25rem] border-[0.3px] border-solid border-green mq750:pb-[1.313rem] mq750:box-border mq1050:pt-[1.25rem] mq1050:pb-[2.063rem] mq1050:box-border mq1125:hidden">
+      <div class="flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.062rem]">
+        <img class="h-[3.563rem] w-[3.438rem] relative object-cover" loading="lazy" alt=""
+          src="/public/image-12@2x.png" />
       </div>
-      <div class="main-menu-inner">
-        <div class="material-symbols-lighthome-ou-parent">
-          <img class="material-symbols-lighthome-ou-icon" loading="lazy" alt=""
-            src="./public/materialsymbolslighthomeoutline.svg" />
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/materialsymbolslighthomeoutline.svg" />
 
-          <div class="frame-child"></div>
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
         </div>
       </div>
-      <div class="main-menu-child">
-        <div class="frame-parent">
-          <div class="frame-wrapper">
-            <div class="grommet-iconsprojects-parent">
-              <img class="grommet-iconsprojects" loading="lazy" alt="" src="./public/grommeticonsprojects.svg" />
+      <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.875rem] pl-[0.312rem]">
+        <div class="flex flex-col items-end justify-start gap-[1.187rem]">
+          <div class="flex flex-row items-start justify-end py-[0rem] pr-[0.25rem] pl-[0.5rem]">
+            <div class="h-[2.063rem] w-[1.5rem] relative">
+              <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+                src="/public/grommeticonsprojects.svg" />
 
-              <div class="frame-item"></div>
+              <div
+                class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+              </div>
             </div>
           </div>
-          <div class="ellipse-parent">
-            <div class="frame-inner"></div>
-            <img class="bxsdata-icon" loading="lazy" alt="" src="./public/bxsdata.svg" />
-            <div class="line-div"></div>
+          <div class="h-[2.75rem] flex flex-col items-start justify-center p-[0.5rem] box-border relative gap-[0.5rem]">
+            <div class="w-[2.5rem] h-[2.5rem] absolute !m-[0] top-[0.125rem] left-[-0.125rem] rounded-[50%] bg-white">
+            </div>
+            <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0 z-[1]" loading="lazy" alt=""
+              src="/public/bxsdata.svg" />
+
+            <div class="w-[1.25rem] h-[0.063rem] relative box-border z-[1] border-t-[1px] border-solid border-gp-green">
+            </div>
           </div>
         </div>
       </div>
-      <div class="frame-div">
-        <div class="fluent-mdl2website-parent">
-          <img class="fluent-mdl2website-icon" loading="lazy" alt="" src="./public/fluentmdl2website.svg" />
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/fluentmdl2website.svg" />
 
-          <div class="frame-child1"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner1">
-        <div class="frame-group">
-          <div class="material-symbolsdelete-outlin-parent">
-            <img class="material-symbolsdelete-outlin-icon" loading="lazy" alt=""
-              src="./public/materialsymbolsdeleteoutline.svg" />
-
-            <div class="frame-child2"></div>
-          </div>
-          <div class="ant-designdatabase-outlined-parent">
-            <img class="ant-designdatabase-outlined-icon" loading="lazy" alt=""
-              src="./public/antdesigndatabaseoutlined.svg" />
-
-            <div class="frame-child3"></div>
-          </div>
-          <div class="iconoirsettings-profiles-parent">
-            <img class="iconoirsettings-profiles" loading="lazy" alt="" src="./public/iconoirsettingsprofiles.svg" />
-
-            <div class="frame-child4"></div>
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
           </div>
         </div>
       </div>
-      <div class="main-menu-inner2">
-        <div class="mditick-parent">
-          <img class="mditick-icon" loading="lazy" alt="" src="./public/mditick.svg" />
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="flex flex-col items-start justify-start gap-[1.687rem]">
+          <div class="w-[1.5rem] h-[2.063rem] relative">
+            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+              src="/public/materialsymbolsdeleteoutline.svg" />
 
-          <div class="frame-child5"></div>
+            <div
+              class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+            </div>
+          </div>
+          <div class="w-[1.5rem] h-[2.063rem] relative">
+            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+              src="/public/antdesigndatabaseoutlined.svg" />
+
+            <div
+              class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+            </div>
+          </div>
+          <div class="w-[1.5rem] h-[2.063rem] relative">
+            <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+              src="/public/iconoirsettingsprofiles.svg" />
+
+            <div
+              class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="main-menu-inner3">
-        <div class="tablernotification-parent">
-          <img class="tablernotification-icon" loading="lazy" alt="" src="./public/tablernotification.svg" />
-
-          <div class="frame-child6"></div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.437rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/mditick.svg" />
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
         </div>
       </div>
-      <div class="material-symbolssettings-outl-wrapper">
-        <img class="material-symbolssettings-outl-icon" loading="lazy" alt=""
-          src="./public/materialsymbolssettingsoutline.svg" />
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[13.15rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/tablernotification.svg" />
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
       </div>
-      <div class="fa-solidpower-off-wrapper">
-        <img class="fa-solidpower-off-icon" loading="lazy" alt="" src="./public/fasolidpoweroff.svg" />
+      <div class="flex flex-row items-start justify-start pt-[0rem] px-[0.75rem] pb-[1.25rem]">
+        <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+          src="/public/materialsymbolssettingsoutline.svg" />
+      </div>
+      <div class="flex flex-row items-start justify-start py-[0rem] px-[0.75rem]">
+        <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+          src="/public/fasolidpoweroff.svg" />
       </div>
     </div>
-    <div class="desktop-4-wrapper">
-      <div class="desktop-4">
-        <button class="rectangle-parent">
-          <div class="rectangle-div"></div>
-          <div class="heroiconsarrow-up-16-solid-wrapper">
-            <img class="heroiconsarrow-up-16-solid" alt="" src="./public/heroiconsarrowup16solid@2x.png" />
+    <div class="w-[19.625rem] flex flex-col items-start justify-start py-[0rem] pr-[0.875rem] pl-[0rem] box-border">
+      <div
+        class="self-stretch rounded-tl-none rounded-tr-xl rounded-b-none bg-gp-green overflow-hidden flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[29.312rem] gap-[3.062rem] mq450:gap-[1.5rem] mq450:pb-[12.375rem] mq450:box-border mq1050:pb-[19.063rem] mq1050:box-border">
+        <div
+          class="self-stretch rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl bg-white flex flex-row items-start justify-start pt-[2.187rem] px-[1.25rem] pb-[1.312rem] gap-[1rem] border-[1px] border-solid border-gp-green">
+          <div
+            class="h-[5.375rem] w-[18.75rem] relative rounded-tl-none rounded-tr-xl rounded-br-none rounded-bl-xl bg-white box-border hidden border-[1px] border-solid border-gp-green">
           </div>
-          <div class="leads-data">Leads Data</div>
-        </button>
-        <!-- ================================================================ -->
-        <div class="desktop-4-inner">
-          <div class="frame-container">
-            <div class="riteam-line-parent">
-              <div class="nurses">County 1</div>
+          <div class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+            <img class="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0 object-contain z-[1]" loading="lazy"
+              alt="" src="/public/heroiconsarrowup16solid@2x.png" />
+          </div>
+          <a
+            class="[text-decoration:none] relative font-semibold text-[inherit] inline-block min-w-[7.25rem] z-[1] mq450:text-[1rem]">Leads
+            Data</a>
+        </div>
+        <div class="self-stretch flex flex-col items-start justify-start gap-[0.75rem] text-[1rem] text-white">
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <a class="[text-decoration:none] relative font-medium text-[inherit] inline-block min-w-[4.75rem]">Country
+              1</a>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[4.938rem]">
+              Country 2
             </div>
-            <div class="riteam-line-parent">
-              <div class="nurses">County 2</div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[4.938rem]">
+              Country 3
             </div>
-            <div class="riteam-line-parent">
-              <div class="nurses">County 3</div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[5.063rem]">
+              Country 4
             </div>
-            <div class="riteam-line-parent">
-              <div class="nurses">County 4</div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[4.938rem]">
+              Country 5
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[5rem]">
+              Country 6
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[5rem]">
+              Country 7
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[5.063rem]">
+              Country 8
+            </div>
+          </div>
+          <div
+            class="self-stretch flex flex-row items-start justify-start pt-[0.5rem] px-[0.625rem] pb-[0.375rem] border-b-[1px] border-solid border-white">
+            <div class="relative font-medium inline-block min-w-[5rem]">
+              Country 9
             </div>
           </div>
         </div>
-        <!-- ================================================================ -->
       </div>
     </div>
-    <section class="leads-data-1-inner">
-      <div class="frame-parent1">
-        <div class="frame-parent2">
-          <div class="frame-parent3">
-            <div class="nurses-wrapper">
-              <h3 class="nurses1">Nurses</h3>
-            </div>
-            <div class="frame-parent4">
-              <div class="frame-wrapper1">
-                <div class="tablersearch-parent">
-                  <img class="tablersearch-icon" loading="lazy" alt="" src="./public/tablersearch.svg" />
+    <section
+      class="flex-1 flex flex-col items-start justify-start pt-[1.75rem] px-[0rem] pb-[0rem] box-border min-w-[41.75rem] max-w-full text-left text-[1.25rem] text-black font-sub-header mq750:min-w-full">
+      <div class="self-stretch flex flex-col items-start justify-start gap-[1.875rem] max-w-full">
+        <div
+          class="self-stretch flex flex-row items-start justify-start pt-[0rem] pb-[0.187rem] pr-[0rem] pl-[0.375rem] box-border max-w-full">
+          <header
+            class="flex-1 flex flex-col items-start justify-start gap-[0.687rem] max-w-full text-left text-[1.25rem] text-gp-green font-sub-header">
+            <div class="self-stretch flex flex-row items-start justify-between gap-[1.25rem]">
+              <div
+                class="w-[11.125rem] flex flex-col items-start justify-start pt-[0.75rem] px-[0rem] pb-[0rem] box-border">
+                <a class="[text-decoration:none] self-stretch relative font-semibold text-[inherit]">Nurses</a>
+              </div>
+              <div class="flex flex-row items-start justify-start gap-[2.625rem] text-[1rem] mq450:gap-[1.313rem]">
+                <div class="flex flex-col items-start justify-start pt-[0.812rem] px-[0rem] pb-[0rem]">
+                  <div class="flex flex-row items-start justify-start gap-[1.25rem]">
+                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                      alt="" src="/public/tablersearch.svg" />
 
-                  <img class="mdiplus-circle-outline-icon" loading="lazy" alt=""
-                    src="./public/mdipluscircleoutline.svg" />
+                    <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                      alt="" src="/public/mdipluscircleoutline.svg" />
 
-                  <div class="material-symbolsnotifications-wrapper">
-                    <img class="material-symbolsnotifications-icon" loading="lazy" alt=""
-                      src="./public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
+                    <div class="flex flex-col items-start justify-start py-[0rem] pr-[0.5rem] pl-[0rem]">
+                      <img class="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                        src="/public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
+                    </div>
+                    <a
+                      class="[text-decoration:none] relative font-medium text-[inherit] inline-block min-w-[3.438rem]">Admin</a>
                   </div>
-                  <div class="admin">Admin</div>
+                </div>
+                <img class="h-[3.125rem] w-[3.125rem] relative rounded-[50%] object-cover" loading="lazy" alt=""
+                  src="/public/ellipse-18@2x.png" />
+              </div>
+            </div>
+            <div
+              class="self-stretch h-[0.063rem] relative box-border border-t-[1px] border-dashed border-darkslategray">
+            </div>
+          </header>
+        </div>
+        <div
+          class="w-full flex flex-row items-start justify-start pt-[0rem] px-[0.375rem] pb-[0.25rem] box-border max-w-full text-gp-green">
+          <div class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq450:flex-wrap">
+            <div class="flex flex-col items-start justify-start pt-[0.375rem] px-[0rem] pb-[0rem]">
+              <a
+                class="[text-decoration:none] relative font-semibold text-[inherit] inline-block min-w-[5.625rem] mq450:text-[1rem]">Projects</a>
+            </div>
+            <div class="flex flex-row items-end justify-start gap-[1.25rem] text-[0.875rem]">
+              <div
+                class="flex flex-row items-start justify-start pt-[0.25rem] px-[0.25rem] pb-[0.125rem] gap-[0.625rem] border-b-[1px] border-solid border-gp-green">
+                <img class="h-[1rem] w-[1rem] relative overflow-hidden shrink-0" alt=""
+                  src="/public/icbaselineplus.svg" />
+
+                <div class="relative inline-block min-w-[6.625rem]">
+                  Add Candidate
                 </div>
               </div>
-              <img class="ellipse-icon" loading="lazy" alt="" src="./public/ellipse-18@2x.png" />
+              <div
+                class="rounded-lg bg-gp-green flex flex-row items-start justify-start py-[0.5rem] px-[0.437rem] text-[1.25rem] text-white"
+                required="{true}" autofocus="{true}" disabled="{true}" readonly="{true}">
+                <label class="cursor-pointer" for="file-4:179">
+                  <a
+                    class="[text-decoration:none] relative font-semibold text-[inherit] mq450:text-[1rem]">Submissions</a>
+                </label>
+                <input class="hidden" type="file" id="file-4:179" />
+              </div>
             </div>
           </div>
-          <div class="frame-child7"></div>
         </div>
+        <div
+          class="self-stretch flex flex-row items-end justify-start py-[0rem] pr-[1.875rem] pl-[0rem] box-border gap-[0.875rem] max-w-full mq1050:flex-wrap">
+          <div class="h-[6.5rem] flex flex-col items-start justify-start">
+            <div class="w-[1.25rem] h-[1.25rem] relative bg-gainsboro"></div>
+          </div>
+          <div
+            class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[1rem] px-[0.375rem] pb-[0.625rem] box-border gap-[5.187rem] min-w-[39.125rem] max-w-full mq750:gap-[1.313rem] mq750:min-w-full mq1050:gap-[2.563rem]">
+            <div class="w-[58.375rem] flex flex-col items-start justify-start gap-[1.062rem] max-w-full">
+              <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem] max-w-full">
+                <div class="flex flex-row items-start justify-start gap-[0.562rem]">
+                  <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                    alt="" src="/public/materialsymbolsstaroutline.svg" />
 
-
-
-        <div class="main-container">
-          <div style="
-                  width: 100%;
-                  position: relative;
-                  background-color: #fff;
-                  overflow: hidden;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-end;
-                  justify-content: flex-start;
-                  box-sizing: border-box;
-                  gap: 2.125rem;
-                  line-height: normal;
-                  letter-spacing: normal;
-                  text-align: left;
-                  font-size: 1.25rem;
-                  color: #005f6b;
-                  font-family: Montserrat;
-                ">
-            <div style="
-                    align-self: stretch;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                    padding: 0rem 0rem 0rem 0.625rem;
-                    gap: 1.25rem;
-                  ">
-              <div style="
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      justify-content: flex-start;
-                      padding: 0.25rem 0rem 0rem;
-                    ">
-                <a style="
-                        text-decoration: none;
-                        position: relative;
-                        font-weight: 600;
-                        color: inherit;
-                        display: inline-block;
-                        min-width: 5.625rem;
-                      ">Projects</a>
-              </div>
-              <div style="
-                      display: flex;
-                      flex-direction: row;
-                      align-items: flex-end;
-                      justify-content: flex-start;
-                      gap: 1.25rem;
-                      font-size: 0.875rem;
-                    ">
-                <div style="
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-end;
-                        padding: 0rem 0rem 0.437rem;
-                      ">
-                  <div style="
-                          border-bottom: 1px solid #005f6b;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: flex-start;
-                          justify-content: flex-start;
-                          padding: 0.25rem 0.25rem 0.125rem;
-                          gap: 0.625rem;
-                        ">
-                    <img style="
-                            height: 1rem;
-                            width: 1rem;
-                            position: relative;
-                            overflow: hidden;
-                            flex-shrink: 0;
-                          " loading="lazy" alt="" src="./public/icbaselineplus.svg" />
-
-                    <a style="
-                            text-decoration: none;
-                            position: relative;
-                            color: inherit;
-                            display: inline-block;
-                            min-width: 6.625rem;
-                          ">Add Candidate</a>
+                  <div class="relative font-semibold mq450:text-[1rem]">
+                    Name of the Project
+                  </div>
+                  <div
+                    class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem] text-[0.875rem] text-green">
+                    <div
+                      class="rounded bg-aquamarine flex flex-row items-start justify-start py-[0.125rem] px-[0.25rem]">
+                      <a class="[text-decoration:none] relative text-[inherit] inline-block min-w-[2.75rem]">Active</a>
+                    </div>
                   </div>
                 </div>
-                <div style="
-                        border-radius: 8px;
-                        background-color: #005f6b;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        padding: 0.5rem 0.437rem;
-                        font-size: 1.25rem;
-                        color: #fff;
-                      ">
-                  <a style="
-                          text-decoration: none;
-                          position: relative;
-                          font-weight: 600;
-                          color: inherit;
-                        ">Submissions</a>
+                <div
+                  class="self-stretch h-[0.063rem] flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[1.312rem] box-border max-w-full">
+                  <div
+                    class="self-stretch flex-1 relative box-border max-w-full border-t-[1px] border-solid border-strokes">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[34.313rem] flex flex-row items-start justify-start py-[0rem] px-[2.562rem] box-border max-w-full text-[0.875rem]">
+                <div class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq750:flex-wrap">
+                  <div class="relative">Admin 1, 1234567890</div>
+                  <div class="relative">LoremIpsum LoremIpsum</div>
                 </div>
               </div>
             </div>
-            <section style="
-                    align-self: stretch;
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                    gap: 0.875rem;
-                    max-width: 100%;
-                    text-align: left;
-                    font-size: 1.25rem;
-                    color: #000;
-                    font-family: Montserrat;
-                  ">
-              <div style="
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      justify-content: flex-start;
-                      padding: 5.75rem 0rem 0rem;
-                    ">
-                <div style="
-                        width: 1.25rem;
-                        height: 1.25rem;
-                        position: relative;
-                        background-color: #d9d9d9;
-                      "></div>
+            <div class="self-stretch flex flex-row items-start justify-end py-[0rem] px-[1.062rem] text-[1rem]">
+              <div class="relative font-medium whitespace-nowrap">
+                Created by Admin12 at 00:00 hrs
               </div>
-              <div style="
-                      flex: 1;
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      justify-content: flex-start;
-                      gap: 1.437rem;
-                      min-width: 39.125rem;
-                      max-width: 100%;
-                    ">
-                <div style="
-                        align-self: stretch;
-                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-                        background-color: #fff;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        padding: 1rem 1.437rem 0.625rem 1.5rem;
-                        box-sizing: border-box;
-                        gap: 0.5rem;
-                        max-width: 100%;
-                      ">
-                  <div style="
-                          align-self: stretch;
-                          display: flex;
-                          flex-direction: column;
-                          align-items: flex-start;
-                          justify-content: flex-start;
-                          padding: 0rem 0rem 0.562rem;
-                          box-sizing: border-box;
-                          gap: 0.5rem;
-                          max-width: 100%;
-                        ">
-                    <div style="
-                            display: flex;
-                            flex-direction: row;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            gap: 1.062rem;
-                          ">
-                      <h3 style="
-                              margin: 0;
-                              position: relative;
-                              font-size: inherit;
-                              font-weight: 600;
-                              font-family: inherit;
-                            ">
-                        Name of the Project
-                      </h3>
-                      <div style="
-                              display: flex;
-                              flex-direction: column;
-                              align-items: flex-start;
-                              justify-content: flex-start;
-                              padding: 0.125rem 0rem 0rem;
-                              font-size: 0.875rem;
-                              color: #039000;
-                            ">
-                        <div style="
-                                border-radius: 4px;
-                                background-color: rgba(193, 252, 192, 0.7);
-                                display: flex;
-                                flex-direction: row;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                padding: 0.125rem 0.25rem;
-                              ">
-                          <a style="
-                                  text-decoration: none;
-                                  position: relative;
-                                  color: inherit;
-                                  display: inline-block;
-                                  min-width: 2.75rem;
-                                ">Active</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="
-                            align-self: stretch;
-                            height: 0.063rem;
-                            display: flex;
-                            flex-direction: row;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            padding: 0rem 0rem 0rem 0.187rem;
-                            box-sizing: border-box;
-                            max-width: 100%;
-                          ">
-                      <div style="
-                              align-self: stretch;
-                              flex: 1;
-                              position: relative;
-                              border-top: 1px solid #c7c7c7;
-                              box-sizing: border-box;
-                              max-width: 100%;
-                            "></div>
-                    </div>
-                  </div>
-                  <div style="
-                          width: 32.063rem;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: flex-start;
-                          justify-content: flex-start;
-                          padding: 0rem 1.437rem;
-                          box-sizing: border-box;
-                          max-width: 100%;
-                          font-size: 0.875rem;
-                        ">
-                    <div style="
-                            flex: 1;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            gap: 0.5rem;
-                            max-width: 100%;
-                          ">
-                      <div style="
-                              align-self: stretch;
-                              display: flex;
-                              flex-direction: row;
-                              align-items: flex-start;
-                              justify-content: space-between;
-                              gap: 1.25rem;
-                            ">
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                        </div>
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                        </div>
-                      </div>
-                      <div style="
-                              align-self: stretch;
-                              display: flex;
-                              flex-direction: row;
-                              align-items: flex-start;
-                              justify-content: space-between;
-                              gap: 1.25rem;
-                            ">
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                        </div>
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div style="
-                          align-self: stretch;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: flex-start;
-                          justify-content: flex-end;
-                          font-size: 1rem;
-                        ">
-                    <div style="
-                            position: relative;
-                            font-weight: 500;
-                            white-space: nowrap;
-                          ">
-                      Created by Admin12 at 00:00 hrs
-                    </div>
-                  </div>
-                </div>
-                <div style="
-                        align-self: stretch;
-                        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-                        background-color: #fff;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: flex-start;
-                        padding: 1rem 1.437rem 0.625rem 1.5rem;
-                        box-sizing: border-box;
-                        gap: 0.5rem;
-                        max-width: 100%;
-                      ">
-                  <div style="
-                          align-self: stretch;
-                          display: flex;
-                          flex-direction: column;
-                          align-items: flex-start;
-                          justify-content: flex-start;
-                          padding: 0rem 0rem 0.562rem;
-                          box-sizing: border-box;
-                          gap: 0.5rem;
-                          max-width: 100%;
-                        ">
-                    <div style="
-                            display: flex;
-                            flex-direction: row;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            gap: 1.062rem;
-                          ">
-                      <h3 style="
-                              margin: 0;
-                              position: relative;
-                              font-size: inherit;
-                              font-weight: 600;
-                              font-family: inherit;
-                            ">
-                        Name of the Project
-                      </h3>
-                      <div style="
-                              display: flex;
-                              flex-direction: column;
-                              align-items: flex-start;
-                              justify-content: flex-start;
-                              padding: 0.125rem 0rem 0rem;
-                              font-size: 0.875rem;
-                              color: #900000;
-                            ">
-                        <div style="
-                                border-radius: 4px;
-                                background-color: rgba(252, 192, 192, 0.7);
-                                display: flex;
-                                flex-direction: row;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                padding: 0.125rem 0.25rem;
-                              ">
-                          <a style="
-                                  text-decoration: none;
-                                  position: relative;
-                                  color: inherit;
-                                  display: inline-block;
-                                  min-width: 3.5rem;
-                                ">Inactive</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div style="
-                            align-self: stretch;
-                            height: 0.063rem;
-                            display: flex;
-                            flex-direction: row;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            padding: 0rem 0rem 0rem 0.187rem;
-                            box-sizing: border-box;
-                            max-width: 100%;
-                          ">
-                      <div style="
-                              align-self: stretch;
-                              flex: 1;
-                              position: relative;
-                              border-top: 1px solid #c7c7c7;
-                              box-sizing: border-box;
-                              max-width: 100%;
-                            "></div>
-                    </div>
-                  </div>
-                  <div style="
-                          width: 32.063rem;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: flex-start;
-                          justify-content: flex-start;
-                          padding: 0rem 1.437rem;
-                          box-sizing: border-box;
-                          max-width: 100%;
-                          font-size: 0.875rem;
-                        ">
-                    <div style="
-                            flex: 1;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            gap: 0.5rem;
-                            max-width: 100%;
-                          ">
-                      <div style="
-                              align-self: stretch;
-                              display: flex;
-                              flex-direction: row;
-                              align-items: flex-start;
-                              justify-content: space-between;
-                              gap: 1.25rem;
-                            ">
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                        </div>
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                        </div>
-                      </div>
-                      <div style="
-                              align-self: stretch;
-                              display: flex;
-                              flex-direction: row;
-                              align-items: flex-start;
-                              justify-content: space-between;
-                              gap: 1.25rem;
-                            ">
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                          <div style="position: relative">Admin 1, 1234567890</div>
-                        </div>
-                        <div style="
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                justify-content: flex-start;
-                                gap: 0.5rem;
-                              ">
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                          <div style="position: relative">LoremIpsum LoremIpsum</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div style="
-                          align-self: stretch;
-                          display: flex;
-                          flex-direction: row;
-                          align-items: flex-start;
-                          justify-content: flex-end;
-                          font-size: 1rem;
-                        ">
-                    <div style="
-                            position: relative;
-                            font-weight: 500;
-                            white-space: nowrap;
-                          ">
-                      Created by Admin12 at 00:00 hrs
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            </div>
           </div>
         </div>
+        <div
+          class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[1.812rem] pl-[0rem] box-border gap-[0.937rem] max-w-full mq1050:flex-wrap">
+          <div class="flex flex-col items-start justify-start pt-[5.312rem] px-[0rem] pb-[0rem]">
+            <div class="w-[1.25rem] h-[1.25rem] relative bg-gainsboro"></div>
+          </div>
+          <div
+            class="flex-1 shadow-[2px_2px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-start justify-start pt-[1rem] px-[0.375rem] pb-[0.625rem] box-border gap-[5.187rem] min-w-[39.125rem] max-w-full mq750:gap-[1.313rem] mq750:min-w-full mq1050:gap-[2.563rem]">
+            <div class="w-[58.375rem] flex flex-col items-start justify-start gap-[1.062rem] max-w-full">
+              <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem] max-w-full">
+                <div class="flex flex-row items-start justify-start gap-[0.562rem]">
+                  <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                    alt="" src="/public/materialsymbolsstaroutline.svg" />
 
-
-
-
+                  <div class="relative font-semibold mq450:text-[1rem]">
+                    Name of the Project
+                  </div>
+                  <div
+                    class="flex flex-col items-start justify-start pt-[0.093rem] px-[0rem] pb-[0rem] text-[0.875rem] text-darkred">
+                    <div class="rounded bg-pink flex flex-row items-start justify-start py-[0.125rem] px-[0.25rem]">
+                      <div class="relative inline-block min-w-[3.5rem]">
+                        Inactive
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="self-stretch h-[0.063rem] flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[1.312rem] box-border max-w-full">
+                  <div
+                    class="self-stretch flex-1 relative box-border max-w-full border-t-[1px] border-solid border-strokes">
+                  </div>
+                </div>
+              </div>
+              <div
+                class="w-[34.313rem] flex flex-row items-start justify-start py-[0rem] px-[2.562rem] box-border max-w-full text-[0.875rem]">
+                <div class="flex-1 flex flex-row items-start justify-between max-w-full gap-[1.25rem] mq750:flex-wrap">
+                  <div class="relative">Admin 1, 1234567890</div>
+                  <div class="relative">LoremIpsum LoremIpsum</div>
+                </div>
+              </div>
+            </div>
+            <div class="self-stretch flex flex-row items-start justify-end py-[0rem] px-[1.062rem] text-[1rem]">
+              <div class="relative font-medium whitespace-nowrap">
+                Created by Admin12 at 00:00 hrs
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
