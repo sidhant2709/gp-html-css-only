@@ -6,128 +6,227 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
 
   <link rel="stylesheet" href="./leads_page_2.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" />
-
-  <style>
-    @font-face {
-      font-family: "Segoe UI";
-      src: url("./public/SEGOEUI.TTF");
-      font-weight: 500;
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe UI:wght@500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
+      theme: {
+        extend: {
+          colors: {
+            "colors-white": "#fff",
+            "colors-grey-4-border": "#e9e9e9",
+            "colors-black-1-primary-text": "#313131",
+            black: "#000",
+            "gp-green": "#005f6b",
+            strokes: "#c7c7c7",
+            gray: {
+              100: "#949494",
+              200: "rgba(148, 148, 148, 0.09)",
+            },
+            "crmd-full-black": "#202022",
+            gainsboro: "#d9d9d9",
+            darkslategray: {
+              100: "#00606b",
+              200: "#005f6b",
+            },
+            whitesmoke: "#f5f5f5",
+          },
+          spacing: {},
+          fontFamily: {
+            "text-text-base": "Inter",
+            "body-text": "Montserrat",
+            "segoe-ui": "'Segoe UI'",
+            "nav-header": "Montserrat",
+          },
+        },
+        fontSize: {
+          sm: "0.875rem",
+          xs: "0.75rem",
+          base: "1rem",
+          "5xl": "1.5rem",
+          inherit: "inherit",
+        },
+        screens: {
+          lg: {
+            max: "1200px",
+          },
+          mq1050: {
+            raw: "screen and (max-width: 1050px)",
+          },
+          mq750: {
+            raw: "screen and (max-width: 750px)",
+          },
+          mq450: {
+            raw: "screen and (max-width: 450px)",
+          },
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
     }
-
-    @font-face {
-      font-family: "Segoe UI";
-      src: url("./public/segoe-ui-semibold.ttf");
-      font-weight: 600;
-    }
-  </style>
+  </script>
 </head>
 
 <body>
-  <div class="leads-data-2">
-    <div class="enrollers-parent">
-      <div class="enrollers">Enrollers</div>
-      <div class="frame-child"></div>
-      <div class="frame-item"></div>
-    </div>
-    <div class="registrars-parent">
-      <div class="registrars">Registrars</div>
-      <div class="frame-inner"></div>
-      <div class="ellipse-div"></div>
-    </div>
-    <div class="main-menu">
-      <div class="image-12-wrapper">
-        <img class="image-12-icon" loading="lazy" alt="" src="./public/image-12@2x.png" />
+  <div
+    class="w-full relative bg-white overflow-hidden flex flex-row items-start justify-start py-[0rem] pr-[1.125rem] pl-[0rem] box-border gap-[1.062rem] leading-[normal] tracking-[normal] text-left text-[1rem] text-black font-segoe-ui">
+    <div class="h-[1.5rem] w-[7.75rem] relative hidden">
+      <div class="absolute top-[0rem] left-[2.125rem] font-medium">
+        Enrollers
       </div>
-      <div class="main-menu-inner">
-        <div class="material-symbols-lighthome-ou-parent">
-          <img class="material-symbols-lighthome-ou-icon" loading="lazy" alt=""
-            src="./public/materialsymbolslighthomeoutline.svg" />
-
-          <div class="line-div"></div>
-        </div>
-      </div>
-      <div class="main-menu-child">
-        <div class="grommet-iconsprojects-parent">
-          <img class="grommet-iconsprojects" loading="lazy" alt="" src="./public/grommeticonsprojects.svg" />
-          <div class="frame-child1"></div>
-        </div>
-      </div>
-      <div class="frame-div">
-        <div class="ellipse-parent">
-          <div class="frame-child2"></div>
-          <img class="bxsdata-icon" loading="lazy" alt="" src="./public/bxsdata.svg" />
-          <div class="frame-child3"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner1">
-        <div class="fluent-mdl2website-parent">
-          <img class="fluent-mdl2website-icon" loading="lazy" alt="" src="./public/fluentmdl2website.svg" />
-          <div class="frame-child4"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner2">
-        <div class="material-symbolsdelete-outlin-parent">
-          <img class="material-symbolsdelete-outlin-icon" loading="lazy" alt=""
-            src="./public/materialsymbolsdeleteoutline.svg" />
-          <div class="frame-child5"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner3">
-        <div class="ant-designdatabase-outlined-parent">
-          <img class="ant-designdatabase-outlined-icon" loading="lazy" alt=""
-            src="./public/antdesigndatabaseoutlined.svg" />
-          <div class="frame-child6"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner4">
-        <div class="iconoirsettings-profiles-parent">
-          <img class="iconoirsettings-profiles" loading="lazy" alt="" src="./public/iconoirsettingsprofiles.svg" />
-          <div class="frame-child7"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner5">
-        <div class="mditick-parent">
-          <img class="mditick-icon" loading="lazy" alt="" src="./public/mditick.svg" />
-          <div class="frame-child8"></div>
-        </div>
-      </div>
-      <div class="main-menu-inner6">
-        <div class="tablernotification-parent">
-          <img class="tablernotification-icon" loading="lazy" alt="" src="./public/tablernotification.svg" />
-          <div class="frame-child9"></div>
-        </div>
-      </div>
-      <div class="material-symbolssettings-outl-wrapper">
-        <img class="material-symbolssettings-outl-icon" loading="lazy" alt=""
-          src="./public/materialsymbolssettingsoutline.svg" />
-      </div>
-      <div class="fa-solidpower-off-wrapper">
-        <img class="fa-solidpower-off-icon" loading="lazy" alt="" src="./public/fasolidpoweroff.svg" />
+      <div class="absolute top-[0.063rem] left-[0rem] rounded-[50%] bg-gainsboro w-[1.375rem] h-[1.375rem]"></div>
+      <div
+        class="absolute top-[0.188rem] left-[0.125rem] rounded-[50%] bg-darkslategray-200 box-border w-[1.125rem] h-[1.125rem] border-[0px] border-solid border-white">
       </div>
     </div>
-    <main class="leads-data-2-inner">
-      <section class="frame-parent">
+    <div class="h-[1.5rem] w-[8.563rem] relative hidden">
+      <div class="absolute top-[0rem] left-[2.125rem] font-medium">
+        Registrars
+      </div>
+      <div class="absolute top-[0.063rem] left-[0rem] rounded-[50%] bg-gainsboro w-[1.375rem] h-[1.375rem]"></div>
+      <div
+        class="absolute top-[0.188rem] left-[0.125rem] rounded-[50%] box-border w-[1.125rem] h-[1.125rem] border-[0px] border-solid border-white">
+      </div>
+    </div>
+    <div
+      class="[background:linear-gradient(90deg,_#005f6b,_#005f6b_76.5%)] overflow-hidden flex flex-col items-start justify-start pt-[1.437rem] pb-[3.25rem] pr-[0.625rem] pl-[1rem] gap-[1.187rem] border-[0.3px] border-solid border-green lg:pt-[1.25rem] lg:pb-[2.125rem] lg:box-border mq750:pb-[1.375rem] mq750:box-border">
+      <div class="flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.125rem]">
+        <img class="h-[3.563rem] w-[3.438rem] relative object-cover" loading="lazy" alt=""
+          src="/public/image-12@2x.png" />
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/materialsymbolslighthomeoutline.svg" />
 
-        <!-- Breadcrumbs starts here -->
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start py-[0rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/grommeticonsprojects.svg" />
 
-        <div class="frame-wrapper">
-          <div class="frame-group">
-            <header class="frame-container">
-              <div class="frame-wrapper1">
-                <div class="nursesproject-1-parent">
-                  <a class="nursesproject-1">Nurses/Project 1</a>
-                  <img class="iconamoonarrow-up-2-bold" alt="" src="./public/iconamoonarrowup2bold.svg" />
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.875rem] pl-[0.312rem]">
+        <div class="h-[2.75rem] flex flex-col items-start justify-center p-[0.5rem] box-border relative gap-[0.5rem]">
+          <div class="w-[2.5rem] h-[2.5rem] absolute !m-[0] top-[0.125rem] left-[-0.125rem] rounded-[50%] bg-white">
+          </div>
+          <img class="w-[1.25rem] h-[1.25rem] relative overflow-hidden shrink-0 z-[1]" loading="lazy" alt=""
+            src="/public/bxsdata.svg" />
+
+          <div
+            class="w-[1.25rem] h-[0.063rem] relative box-border z-[1] border-t-[1px] border-solid border-darkslategray-200">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/fluentmdl2website.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/materialsymbolsdeleteoutline.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/antdesigndatabaseoutlined.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/iconoirsettingsprofiles.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] pb-[0.5rem] pr-[1.125rem] pl-[0.812rem]">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/mditick.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-row items-start justify-start pt-[0rem] pb-[20.625rem] pr-[1.125rem] pl-[0.812rem] mq450:pb-[13.375rem] mq450:box-border">
+        <div class="h-[2.063rem] w-[1.5rem] relative">
+          <img class="absolute top-[0rem] left-[0rem] w-[1.5rem] h-[1.5rem] overflow-hidden" loading="lazy" alt=""
+            src="/public/tablernotification.svg" />
+
+          <div
+            class="absolute top-[2rem] left-[0rem] box-border w-[1.5rem] h-[0.063rem] border-t-[1px] border-solid border-white">
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-row items-start justify-start pt-[0rem] px-[0.75rem] pb-[1.312rem]">
+        <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+          src="/public/materialsymbolssettingsoutline.svg" />
+      </div>
+      <div class="flex flex-row items-start justify-start py-[0rem] px-[0.75rem]">
+        <img class="h-[1.25rem] w-[1.25rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+          src="/public/fasolidpoweroff.svg" />
+      </div>
+    </div>
+    <section
+      class="flex-1 flex flex-col items-start justify-start pt-[1.75rem] px-[0rem] pb-[0rem] box-border max-w-[calc(100%_-_98px)]">
+      <div class="self-stretch flex flex-col items-start justify-start  max-w-full">
+        <div
+          class="self-stretch flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.187rem] box-border max-w-full">
+          <header
+            class="flex-1 flex flex-col items-start justify-start gap-[0.687rem] max-w-full text-left text-[1.5rem] text-darkslategray-200 font-nav-header">
+            <div
+              class="self-stretch flex flex-row items-start justify-start gap-[4.375rem] max-w-full mq450:gap-[1.063rem] mq750:gap-[2.188rem]">
+              <div
+                class="flex-1 flex flex-col items-start justify-start pt-[0.312rem] px-[0rem] pb-[0rem] box-border max-w-full">
+                <div
+                  class="self-stretch rounded-lg bg-whitesmoke overflow-hidden flex flex-row items-start justify-between pt-[0.5rem] pb-[0.187rem] pr-[1.25rem] pl-[1rem] gap-[1.25rem]">
+                  <b class="relative whitespace-nowrap">Nurses/Country 1/Project 1</b>
+                  <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 object-contain" alt=""
+                    src="/public/iconamoonarrowup2bold.svg" />
                 </div>
               </div>
-              <div class="frame-parent1">
-                <div class="frame-wrapper2">
-                  <div class="frame-parent2">
-                    <div class="tablersearch-parent">
-                      <img class="tablersearch-icon" loading="lazy" alt="" src="./public/tablersearch.svg" />
-                      <img class="magefilter-icon" loading="lazy" alt="" src="./public/magefilter.svg"
-                        id="filter-btn" />
+              <div
+                class="w-[20.688rem] flex flex-row items-start justify-start gap-[2.625rem] max-w-full text-[1rem] font-segoe-ui mq450:gap-[1.313rem]">
+                <div class="flex-1 flex flex-col items-start justify-start pt-[0.812rem] px-[0rem] pb-[0rem]">
+                  <div class="self-stretch flex flex-row items-start justify-start gap-[1.75rem]">
+                    <div class="flex-1 flex flex-row items-start justify-start gap-[1.25rem]">
+                      <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                        alt="" src="/public/tablersearch.svg" />
+
+                      <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                        alt="" src="/public/magefilter.svg" id="filter-btn" />
                       <div class="ld-adv-filter" id="myModal">
                         <a class="advanced-filters">Advanced Filters</a>
                         <section class="advanced-filters-section">
@@ -152,19 +251,16 @@
                             <!-- ==========Row 2=========== -->
 
                             <div class="advanced-filters-rows">
-                              <div class="country-input">
-                                <a class="country">Country</a>
-                              </div>
                               <div class="advanced-filters-select-box">
-                                <a class="advanced-filters-search-label">Origin</a>
+                                <a class="advanced-filters-search-label">Client</a>
                                 <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
                               </div>
                               <div class="advanced-filters-select-box">
-                                <a class="advanced-filters-search-label">Interested</a>
+                                <a class="advanced-filters-search-label">Client Status</a>
                                 <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
                               </div>
                               <div class="advanced-filters-select-box">
-                                <a class="advanced-filters-search-label">Current</a>
+                                <a class="advanced-filters-search-label">Label</a>
                                 <img class="eparrow-up-bold-icon" alt="" src="./public/eparrowupbold.svg" />
                               </div>
                             </div>
@@ -316,25 +412,26 @@
                           </button>
                         </div>
                       </div>
-                      <img class="mdiplus-circle-outline-icon" loading="lazy" alt=""
-                        src="./public/mdipluscircleoutline.svg" />
-                      <img class="material-symbolsnotifications-icon" loading="lazy" alt=""
-                        src="./public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
+
+                      <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                        alt="" src="/public/mdipluscircleoutline.svg" />
+
+                      <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 min-h-[1.5rem]" loading="lazy"
+                        alt="" src="/public/materialsymbolsnotificationsunreadoutlinesharp.svg" />
                     </div>
-                    <a class="admin">Admin</a>
+                    <a
+                      class="[text-decoration:none] relative font-medium text-[inherit] inline-block min-w-[3.438rem]">Admin</a>
                   </div>
                 </div>
-                <img class="ellipse-icon" loading="lazy" alt="" src="./public/ellipse-18@2x.png" />
+                <img class="h-[3.125rem] w-[3.125rem] relative rounded-[50%] object-cover" loading="lazy" alt=""
+                  src="/public/ellipse-18@2x.png" />
               </div>
-            </header>
-            <div class="frame-child10"></div>
-          </div>
+            </div>
+            <div
+              class="self-stretch h-[0.063rem] relative box-border border-t-[1px] border-dashed border-darkslategray-100">
+            </div>
+          </header>
         </div>
-
-        <!-- Breadcrumbs ends here -->
-
-        <!-- Form starts here -->
-
         <div class="form-container">
 
           <!-- Form Row 1 -->
@@ -464,7 +561,7 @@
           <div class="form-container-row">
 
             <div class="assigned-to-parent">
-              <div class="assigned-to">Client</div>
+              <div class="assigned-to">Country of Origin</div>
               <div class="status">
                 <select>
                   <option value="">Option 1</option>
@@ -473,7 +570,7 @@
             </div>
 
             <div class="assigned-to-parent">
-              <div class="assigned-to">Client Status</div>
+              <div class="assigned-to">Intrested Country</div>
               <div class="status">
                 <select>
                   <option value="">Option 1</option>
@@ -482,7 +579,7 @@
             </div>
 
             <div class="assigned-to-parent">
-              <div class="assigned-to">Label</div>
+              <div class="assigned-to">Current Country</div>
               <div class="status">
                 <select>
                   <option value="">Option 1</option>
@@ -516,153 +613,331 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-
-        <!-- Form ends here -->
-
-        <div class="frame-wrapper3">
-          <div class="frame-parent16">
-            <div class="frame-parent17">
-              <input class="frame-input" type="checkbox" />
-              <div class="view-all-leads">View All Leads</div>
+      </div>
+      <div class="frame-wrapper3">
+        <div class="frame-parent16">
+          <div class="frame-parent17">
+            <input class="frame-input" type="checkbox" />
+            <div class="view-all-leads">View All Leads</div>
+          </div>
+          <div class="frame-wrapper4">
+            <button class="search-wrapper">
+              <b class="search">Search</b>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.218rem] max-w-full">
+        <div class="w-full flex flex-row flex-wrap items-start justify-start gap-[1.437rem] max-w-full">
+          <div class="flex flex-col items-start justify-start py-[0rem] pr-[0.25rem] pl-[0rem]">
+            <img class="w-[1.5rem] h-[1.5rem] relative overflow-hidden shrink-0 object-contain" loading="lazy" alt=""
+              src="/public/solarmenudotsbold@2x.png" />
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border">
+            <div class="relative font-medium inline-block min-w-[3.5rem]">
+              Candidate ID
             </div>
-            <div class="frame-wrapper4">
-              <button class="search-wrapper">
-                <b class="search">Search</b>
-              </button>
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border">
+            <div class="relative font-medium inline-block min-w-[3.5rem]">
+              Name
+            </div>
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border">
+            <div class="relative font-medium inline-block min-w-[3.5rem]">
+              Others
+            </div>
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border">
+            <div class="relative font-medium inline-block min-w-[6.563rem]">
+              Qualification
+            </div>
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[0.75rem] pl-[0rem]">
+            <div class="relative font-medium inline-block min-w-[7rem]">
+              Client & Label
+            </div>
+          </div>
+          <div class="w-[11%] flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem]">
+            <div class="relative font-medium">Total Experience</div>
+          </div>
+          <div class="w-[11%] relative font-medium inline-block min-w-[6rem]">
+            Assigned to
+          </div>
+          <div class="w-[11%] relative font-medium inline-block min-w-[3.875rem]">
+            Actions
+          </div>
+        </div>
+        <div
+          class="w-[98%] h-[0.063rem] flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[0.187rem] box-border max-w-full">
+          <div class="flex-1 relative box-border max-w-full border-t-[1px] border-dashed border-darkslategray">
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col items-start justify-start py-[0rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.218rem] max-w-full">
+          <div
+            class="w-full flex flex-col items-start justify-start pb-[1rem] pr-[1.25rem] pl-[0rem] box-border gap-[1.218rem] max-w-full border-b-[1px] border-solid border-strokes">
+            <div
+              class="self-stretch flex flex-row items-start justify-end py-[0rem] pr-[0.937rem] pl-[0rem] box-border max-w-full">
+              <div
+                class="flex-1 flex flex-row items-start justify-start py-[0rem] pr-[0rem] pl-[3.75rem] box-border relative gap-[2.125rem] max-w-full lg:flex-wrap lg:pl-[1.875rem] lg:box-border mq750:gap-[1.063rem]">
+                <input
+                  class="!m-[0] h-[1.375rem] w-[1.375rem] absolute top-[3.688rem] left-[0rem] box-border border-[1px] border-solid border-gp-green"
+                  type="checkbox" />
+
+                <div
+                  class="h-[9.813rem] w-[11%] flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.625rem] pl-[0rem] box-border">
+                  <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[0.875rem]">
+                    <div class="self-stretch flex-1 flex flex-col items-start justify-start gap-[0.25rem]">
+                      <div class="self-stretch flex-1 relative rounded-[50%] bg-gainsboro"></div>
+                      <div class="flex flex-row items-start justify-start py-[0rem] pr-[0.187rem] pl-[0.25rem]">
+                        <div class="relative inline-block">
+                          Candidate ID
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="self-stretch flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="self-stretch flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">NameNameNameName</div>
+                      </div>
+                      <div class="flex flex-row items-start justify-between gap-[1.25rem]">
+                        <div class="flex flex-col items-start justify-start gap-[0.75rem]">
+                          <div class="flex flex-row items-start justify-start gap-[0.625rem]">
+                            <div class="flex flex-col items-start justify-start pt-[0.062rem] px-[0rem] pb-[0rem]">
+                              <div class="relative inline-block min-w-[5rem]">
+                                Contact No
+                              </div>
+                            </div>
+                            <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                              loading="lazy" alt="" src="/public/icbaselinewhatsapp.svg" />
+
+                            <img class="h-[1.125rem] w-[1.119rem] relative overflow-hidden shrink-0 min-h-[1.125rem]"
+                              alt="" src="/public/logoswhatsappicon.svg" />
+                          </div>
+                          <div class="relative inline-block min-w-[3.625rem]">
+                            Email Id
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">XXXXXXXXX</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">BSc Nursing</div>
+                      </div>
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">BSc Nursing</div>
+                      </div>
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">Dept 1,Dept 2,Dept 3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">Client Name</div>
+                      </div>
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">Client Label</div>
+                      </div>
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">Status</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">00 YY- 00 MM- 00 DD</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="w-[11%] flex-1 flex flex-col items-start justify-start pt-[0.312rem] pb-[0rem] pr-[1.187rem] pl-[0rem] box-border lg:flex-1">
+                  <div class="flex flex-col items-start justify-start gap-[3.75rem] mq450:gap-[1.875rem]">
+                    <div class="flex flex-col items-start justify-start gap-[0.687rem]">
+                      <div class="flex flex-row items-start justify-start gap-[1.75rem] mq450:flex-wrap">
+                        <div class="relative">Admin 1 at 00:00 hrs</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[11%] flex flex-col items-center justify-center gap-[0.312rem]">
+                  <div class="flex flex-row items-center justify-center gap-[0.75rem]">
+                    <div class="flex flex-col items-center justify-center gap-[0.25rem]">
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                          src="/public/bi1circle.svg" />
+                      </div>
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                          src="/public/uilgraphbar.svg" />
+                      </div>
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                          src="/public/phflag.svg" />
+                      </div>
+                    </div>
+                    <div class="flex flex-col items-start justify-center gap-[0.25rem]">
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                          src="/public/mdideleteclockoutline.svg" />
+                      </div>
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" alt=""
+                          src="/public/claritynotificationline.svg" />
+                      </div>
+                      <div
+                        class="w-[2.125rem] rounded-md box-border flex flex-row items-center justify-center py-[0.375rem] px-[0.437rem] border-[1px] border-solid border-strokes">
+                        <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0" loading="lazy" alt=""
+                          src="/public/mdiclockoutline.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="cursor-pointer py-[0.375rem] px-[0.312rem] bg-[transparent] rounded-md flex flex-row items-center justify-center gap-[0.25rem] border-[1px] border-solid border-strokes hover:bg-gray-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gray-100">
+                    <img class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 min-h-[1.125rem]" alt=""
+                      src="/public/mditickdecagram.svg" />
+
+                    <div
+                      class="relative text-[0.75rem] font-light font-body-text text-black text-left inline-block min-w-[2.813rem]">
+                      Submit
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full flex flex-row flex-wrap items-start justify-start py-[0rem] pr-[0rem] pl-[1.25rem] box-border gap-[0.5rem] max-w-full text-strokes">
+              <div
+                class="flex-1 flex flex-row items-start justify-start gap-[2.5rem] min-w-[47.438rem] max-w-full mq750:gap-[1.25rem] mq1050:flex-wrap mq1050:min-w-full">
+                <select
+                  class="w-[13.563rem] rounded bg-colors-white box-border overflow-hidden shrink-0 flex flex-row items-start justify-between py-[0.125rem] pr-[0.562rem] pl-[0.437rem] gap-[1.25rem] border-[1px] border-solid border-black">
+                  <img
+                    class="h-[1.125rem] w-[1.125rem] relative overflow-hidden shrink-0 object-contain min-h-[1.125rem]"
+                    alt="" src="/public/iconamoonarrowup2bold-1.svg" />
+                </select>
+                <input
+                  class="flex-1 rounded bg-colors-white box-border overflow-hidden flex flex-row items-start justify-start py-[0.125rem] px-[0.5rem] min-w-[4.938rem] max-w-full border-[1px] border-solid border-black"
+                  placeholder="Comments" />
+              </div>
+              <img class="h-[1.5rem] w-[1.5rem] relative overflow-hidden shrink-0 object-contain" alt=""
+                src="/public/solarmenudotsbold@2x.png" />
             </div>
           </div>
         </div>
-
-        <!-- Table starts here -->
-
-        <div class="content-table">
-          <div class="frame-wrapper5">
-
-            <div class="frame-parent19">
-
-              <div class="solarmenu-dots-bold-parent">
-                <div class="name-column-icon-parent">
-                  <img class="solarmenu-dots-bold-icon" loading="lazy" alt="" src="./public/solarmenudotsbold@2x.png" />
-                </div>
-                <div class="name">Name</div>
+      </div>
+      <div
+        class="self-stretch flex flex-row items-start justify-center mt-[2rem] py-[0rem] pr-[1.25rem] pl-[11.5rem] box-border max-w-full text-[0.875rem] text-colors-black-1-primary-text font-text-text-base mq1050:pl-[5.75rem] mq1050:box-border mq450:pl-[1.25rem] mq450:box-border">
+        <div
+          class="w-[37.625rem] flex flex-row flex-wrap items-start justify-start gap-[4.125rem] max-w-full mq750:gap-[2.063rem] mq450:gap-[1rem]">
+          <div
+            class="flex-1 flex flex-row items-start justify-start gap-[0.375rem] min-w-[14.563rem] max-w-full mq450:flex-wrap">
+            <button
+              class="cursor-pointer py-[0.375rem] px-[0.687rem] bg-colors-white flex-1 rounded box-border flex flex-row items-start justify-start gap-[0.25rem] min-w-[3.125rem] border-[1px] border-solid border-colors-grey-4-border">
+              <div class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                <img class="w-[1rem] h-[1rem] relative overflow-hidden shrink-0" alt=""
+                  src="/public/icon-heroiconsmini-httpsheroiconscom.svg" />
               </div>
-
-              <div class="contact-parent">
-                <a class="contact">Contact</a>
-                <div class="mail-id">Mail Id</div>
+              <div
+                class="relative text-[0.875rem] leading-[1.25rem] font-text-text-base text-colors-black-1-primary-text text-left inline-block min-w-[2.063rem]">
+                Back
               </div>
-
-              <div class="frame-parent20">
-                <div class="assigned-to-wrapper">
-                  <div class="assigned-to1">Assigned to</div>
-                </div>
-                <div class="degree-wrapper">
-                  <div class="degree1">Degree</div>
-                </div>
-                <div class="department">Department</div>
-                <div class="actions">Actions</div>
+            </button>
+            <div
+              class="w-[1.938rem] rounded bg-colors-white box-border flex flex-row items-start justify-start py-[0.375rem] px-[0.687rem] border-[1px] border-solid border-colors-grey-4-border">
+              <div class="relative leading-[1.25rem] inline-block min-w-[0.438rem]">
+                1
               </div>
-
             </div>
+            <div
+              class="rounded bg-gp-green flex flex-row items-start justify-start py-[0.5rem] px-[0.75rem] text-colors-white">
+              <b class="relative leading-[1.25rem] inline-block min-w-[0.563rem]">2</b>
+            </div>
+            <div
+              class="w-[2.063rem] rounded bg-colors-white box-border flex flex-row items-start justify-start py-[0.375rem] px-[0.687rem] border-[1px] border-solid border-colors-grey-4-border">
+              <div class="relative leading-[1.25rem] inline-block min-w-[0.563rem]">
+                3
+              </div>
+            </div>
+            <div
+              class="h-[2.25rem] w-[1.938rem] rounded bg-colors-white box-border flex flex-col items-center justify-center py-[0.5rem] px-[0.375rem] border-[1px] border-solid border-colors-grey-4-border">
+              <img class="w-[1rem] h-[1rem] relative overflow-hidden shrink-0" alt=""
+                src="/public/icon-heroiconsmini-httpsheroiconscom-1.svg" />
+            </div>
+            <div
+              class="w-[2.563rem] rounded bg-colors-white box-border flex flex-row items-start justify-start py-[0.375rem] px-[0.687rem] border-[1px] border-solid border-colors-grey-4-border">
+              <div class="relative leading-[1.25rem] inline-block min-w-[1.063rem]">
+                25
+              </div>
+            </div>
+            <button
+              class="cursor-pointer py-[0.375rem] px-[0.687rem] bg-colors-white flex-1 rounded box-border flex flex-row items-start justify-start gap-[0.25rem] min-w-[3.125rem] border-[1px] border-solid border-colors-grey-4-border">
+              <div
+                class="relative text-[0.875rem] leading-[1.25rem] font-text-text-base text-colors-black-1-primary-text text-left inline-block min-w-[2.063rem]">
+                Next
+              </div>
+              <div class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                <img class="w-[1rem] h-[1rem] relative overflow-hidden shrink-0" alt=""
+                  src="/public/icon-heroiconsmini-httpsheroiconscom-2.svg" />
+              </div>
+            </button>
           </div>
-
-          <div class="frame-wrapper5">
-            <div class="frame-parent-table19">
-
-              <div class="solarmenu-dots-bold-parent">
-                <div class="name-column-icon-parent">
-                  <input class="frame-child20" type="radio" name="radioGroup-4" />
-                </div>
-                <div class="name">NameNameNameNameName</div>
+          <div class="flex flex-row items-start justify-start gap-[0.5rem] text-black">
+            <div class="flex flex-col items-start justify-start pt-[0.5rem] px-[0rem] pb-[0rem]">
+              <div class="relative leading-[1.25rem] inline-block min-w-[6.5rem]">
+                Result per page
               </div>
-
-              <div class="contact-parent">
-                <a class="contact">1234567890</a>
-                <div class="mail-id">NameNameNameNameName</div>
+            </div>
+            <div
+              class="w-[4.125rem] rounded bg-colors-white box-border flex flex-row items-start justify-start py-[0.375rem] px-[0.687rem] gap-[0.5rem] text-colors-black-1-primary-text border-[1px] border-solid border-colors-grey-4-border">
+              <div class="relative leading-[1.25rem] inline-block min-w-[1.125rem]">
+                50
               </div>
-
-              <div class="frame-parent20">
-                <div class="assigned-to-wrapper">
-                  <div class="assigned-to1">Admin at 00:00 hrs</div>
-                </div>
-                <div class="degree-wrapper">
-                  <div class="degree1">BSc Nursing</div>
-                </div>
-                <div class="department">Dept1</div>
-                <div class="actions">
-                  <div class="riprogress-1-line-wrapper">
-                    <img class="riprogress-1-line-icon" loading="lazy" alt="" src="./public/riprogress1line.svg" />
-                  </div>
-                  <div class="icon-park-outlinedownload-one-wrapper">
-                    <img class="icon-park-outlinedownload-one" loading="lazy" alt=""
-                      src="./public/iconparkoutlinedownloadone.svg" />
-                  </div>
-                  <div class="phstar-wrapper">
-                    <img class="phstar-icon" loading="lazy" alt="" src="./public/phstar.svg" />
-                  </div>
-                </div>
+              <div class="flex flex-col items-start justify-start pt-[0.125rem] px-[0rem] pb-[0rem]">
+                <img class="w-[1rem] h-[1rem] relative overflow-hidden shrink-0" alt=""
+                  src="/public/icon-heroiconsmini-httpsheroiconscom-3.svg" />
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Pagination starts here -->
-
-        <footer class="frame-wrapper18">
-          <div class="frame-parent42">
-            <div class="pagination-control-parent">
-              <button class="pagination-control">
-                <div class="icon-heroicons-mini-https-wrapper">
-                  <img class="icon-heroicons-mini-https" alt=""
-                    src="./public/icon-heroiconsmini-httpsheroiconscom.svg" />
-                </div>
-                <div class="back">Back</div>
-              </button>
-              <div class="pagination-page">
-                <div class="div13">1</div>
-              </div>
-              <div class="pagination-page1">
-                <b class="b">2</b>
-              </div>
-              <div class="pagination-page2">
-                <div class="div14">3</div>
-              </div>
-              <div class="pagination-page3">
-                <img class="icon-heroicons-mini-https1" alt=""
-                  src="./public/icon-heroiconsmini-httpsheroiconscom-1.svg" />
-              </div>
-              <div class="pagination-page4">
-                <div class="div15">25</div>
-              </div>
-              <div class="pagination-control1">
-                <div class="next">Next</div>
-                <div class="icon-heroicons-mini-https-container">
-                  <img class="icon-heroicons-mini-https2" alt=""
-                    src="./public/icon-heroiconsmini-httpsheroiconscom-2.svg" />
-                </div>
-              </div>
-            </div>
-            <div class="frame-parent43">
-              <div class="result-per-page-wrapper">
-                <div class="result-per-page">Result per page</div>
-              </div>
-              <div class="pagination-result-per-page">
-                <div class="div16">50</div>
-                <div class="icon-heroicons-mini-https-frame">
-                  <img class="icon-heroicons-mini-https3" alt=""
-                    src="./public/icon-heroiconsmini-httpsheroiconscom-3.svg" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        <!-- Pagination ends here -->
-
-      </section>
-    </main>
+      </div>
+    </section>
   </div>
   <script>
     var modal = document.getElementById("myModal");
