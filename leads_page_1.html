@@ -4,29 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
-
   <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="./leads_page_1.css" />
-
-  <style>
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-Regular.ttf");
-      font-weight: 400;
-    }
-
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-Bold.ttf");
-      font-weight: 500;
-    }
-
-    @font-face {
-      font-family: "Montserrat";
-      src: url("./public/Montserrat-SemiBold.ttf");
-      font-weight: 600;
-    }
-  </style>
+  <link rel="stylesheet" href="./leads_page_1_upload_modal.css" />
 </head>
 
 <body>
@@ -251,6 +231,73 @@
       </div>
     </section>
   </div>
+  <div style="height: 100vh;">
+    <div id="modal" class="fixed z-10 inset-0 overflow-y-auto hidden" aria-labelledby="modalTitle" role="dialog"
+      aria-modal="true">
+      <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+        <!-- Background overlay, show modal on click -->
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+        <!-- Modal container -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+        <div
+          class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+
+          <!-- Modal content -->
+          <div
+            class="shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-white flex flex-col items-center justify-center py-[0.625rem] px-[1.25rem] gap-[1.25rem] text-[0.875rem]">
+            <div class="font-semibold">
+              Upload Leads
+            </div>
+            <div class="flex flex-row items-center justify-center gap-[1.25rem]">
+              <div class="relative">
+                <span>Upload File</span>
+                <span class="text-[0.75rem] font-light">(.csv format)</span>
+              </div>
+              <div class="flex flex-row items-center justify-start">
+                <select
+                  class="w-[20rem] rounded flex flex-row items-center justify-center py-[0.25rem] px-[0.625rem] gap-[8.75rem] border-[1px] border-solid border-silver">
+                  <option value="">Search</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-center gap-[4.375rem]">
+              <div class="relative">Select Country</div>
+              <div class="flex flex-row flex-wrap items-center justify-start">
+                <select
+                  class="w-[20rem] rounded flex flex-row items-center justify-center py-[0.25rem] px-[0.625rem] gap-[8.75rem] border-[1px] border-solid border-silver">
+                  <option value="">Search</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-center gap-[7.25rem]">
+              <div class="relative">Interest</div>
+              <div class="flex flex-row flex-wrap items-center justify-start">
+                <select
+                  class="w-[20rem] rounded flex flex-row items-center justify-center py-[0.25rem] px-[0.625rem] gap-[8.75rem] border-[1px] border-solid border-silver">
+                  <option value="">Search</option>
+                </select>
+              </div>
+            </div>
+            <button
+              class="rounded bg-darkslategray overflow-hidden flex flex-row items-center justify-center py-[0.25rem] px-[5rem] text-white">
+              <div class="relative font-semibold" onclick="toggleModal()">Upload</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="toggleModal()" class="px-4 py-2 bg-blue-500 text-white rounded">
+      Open Modal
+    </button>
+  </div>
+  <script>
+    function toggleModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.toggle('hidden');
+    }
+  </script>
 </body>
 
 </html>

@@ -4,71 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-  <link rel="stylesheet" href="./global.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" />
-  <style>
-    *,
-    ::before,
-    ::after {
-      border-width: 0;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  </style>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      content: ["./*.{html,js}", "./!(build|dist|.*)/**/*.{html,js}"],
-      theme: {
-        extend: {
-          colors: {
-            white: "#fff",
-            black: "#000",
-            strokes: "#c7c7c7",
-            pink: "rgba(252, 192, 192, 0.7)",
-            darkred: "#900000",
-            gainsboro: "#d9d9d9",
-            aquamarine: "rgba(193, 252, 192, 0.7)",
-            green: "#039000",
-            "gp-green": "#005f6b",
-            darkslategray: "#00606b",
-          },
-          spacing: {},
-          fontFamily: {
-            "sub-header": "Montserrat",
-          },
-          borderRadius: {
-            xl: "20px",
-          },
-        },
-        fontSize: {
-          base: "1rem",
-          sm: "0.875rem",
-          xl: "1.25rem",
-          inherit: "inherit",
-        },
-        screens: {
-          mq1125: {
-            raw: "screen and (max-width: 1125px)",
-          },
-          mq1050: {
-            raw: "screen and (max-width: 1050px)",
-          },
-          mq750: {
-            raw: "screen and (max-width: 750px)",
-          },
-          mq450: {
-            raw: "screen and (max-width: 450px)",
-          },
-        },
-      },
-      corePlugins: {
-        preflight: false,
-      },
-    }
-  </script>
+  <link rel="stylesheet" href="./project_list.css">
 </head>
 
 <body>

@@ -1,3 +1,21 @@
+ @font-face {
+   font-family: "Montserrat";
+   src: url("./public/Montserrat-Regular.ttf");
+   font-weight: 400;
+ }
+
+ @font-face {
+   font-family: "Montserrat";
+   src: url("./public/Montserrat-Bold.ttf");
+   font-weight: 500;
+ }
+
+ @font-face {
+   font-family: "Montserrat";
+   src: url("./public/Montserrat-SemiBold.ttf");
+   font-weight: 600;
+ }
+
 .image-12-icon {
   height: 57px;
   width: 55px;
